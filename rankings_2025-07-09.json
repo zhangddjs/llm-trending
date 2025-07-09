@@ -1,0 +1,67 @@
+{
+  "category": "Programming",
+  "date": "2025-07-09T19:31:29.611055+08:00",
+  "models": [
+    {
+      "name": "Claude Sonnet 4",
+      "score": "238B tokens",
+      "rank": 1,
+      "update_time": "2025-07-09T19:31:29.611056+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Pro",
+      "score": "82.4B tokens",
+      "rank": 2,
+      "update_time": "2025-07-09T19:31:29.611056+08:00"
+    },
+    {
+      "name": "Claude 3.7 Sonnet",
+      "score": "35.2B tokens",
+      "rank": 3,
+      "update_time": "2025-07-09T19:31:29.611056+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash Preview 05-...",
+      "score": "33.1B tokens",
+      "rank": 4,
+      "update_time": "2025-07-09T19:31:29.611056+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash",
+      "score": "25.9B tokens",
+      "rank": 5,
+      "update_time": "2025-07-09T19:31:29.611056+08:00"
+    },
+    {
+      "name": "Grok 3 Beta",
+      "score": "22.7B tokens",
+      "rank": 6,
+      "update_time": "2025-07-09T19:31:29.611057+08:00"
+    },
+    {
+      "name": "DeepSeek V3 0324",
+      "score": "13.4B tokens",
+      "rank": 7,
+      "update_time": "2025-07-09T19:31:29.611057+08:00"
+    },
+    {
+      "name": "Claude Opus 4",
+      "score": "10.4B tokens",
+      "rank": 8,
+      "update_time": "2025-07-09T19:31:29.611057+08:00"
+    },
+    {
+      "name": "GPT-4.1 Mini",
+      "score": "9.49B tokens",
+      "rank": 9,
+      "update_time": "2025-07-09T19:31:29.611057+08:00"
+    },
+    {
+      "name": "Gemini 2.0 Flash",
+      "score": "7.9B tokens",
+      "rank": 10,
+      "update_time": "2025-07-09T19:31:29.611058+08:00"
+    }
+  ],
+  "analysis": "The rankings are based on token usage within the 'Programming' category on OpenRouter. The top models include Claude, Gemini, GPT, and DeepSeek, indicating their popularity for programming-related tasks. The presence of multiple Gemini models suggests Google's strong presence in this category. The token usage numbers and percentage changes provide insights into the current trends and model adoption rates."
+}
