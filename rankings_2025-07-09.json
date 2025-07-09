@@ -1,68 +1,68 @@
 {
   "category": "Programming",
-  "date": "2025-07-09T19:50:13.109851+08:00",
+  "date": "2025-07-09T19:52:06.42038+08:00",
   "models": [
     {
-      "name": "claude-3-5-sonnet-20241022",
-      "score": "31.2%",
+      "name": "Claude Sonnet 4",
+      "score": "263B tokens",
       "rank": 1,
-      "update_time": "2025-07-09T19:50:13.109851+08:00"
+      "update_time": "2025-07-09T19:52:06.420381+08:00"
     },
     {
-      "name": "gpt-4o-2024-08-06",
-      "score": "18.5%",
+      "name": "Gemini 2.0 Flash",
+      "score": "259B tokens",
       "rank": 2,
-      "update_time": "2025-07-09T19:50:13.109851+08:00"
+      "update_time": "2025-07-09T19:52:06.420382+08:00"
     },
     {
-      "name": "claude-3-5-haiku-20241022",
-      "score": "12.8%",
+      "name": "Gemini 2.5 Flash Preview 05-...",
+      "score": "177B tokens",
       "rank": 3,
-      "update_time": "2025-07-09T19:50:13.109852+08:00"
+      "update_time": "2025-07-09T19:52:06.420382+08:00"
     },
     {
-      "name": "gpt-4o-mini-2024-07-18",
-      "score": "9.3%",
+      "name": "Gemini 2.5 Pro",
+      "score": "136B tokens",
       "rank": 4,
-      "update_time": "2025-07-09T19:50:13.109852+08:00"
+      "update_time": "2025-07-09T19:52:06.420383+08:00"
     },
     {
-      "name": "gemini-2.0-flash-exp",
-      "score": "7.1%",
+      "name": "DeepSeek V3 0324 (free)",
+      "score": "136B tokens",
       "rank": 5,
-      "update_time": "2025-07-09T19:50:13.109852+08:00"
+      "update_time": "2025-07-09T19:52:06.420383+08:00"
     },
     {
-      "name": "claude-3-opus-20240229",
-      "score": "5.9%",
+      "name": "DeepSeek V3 0324",
+      "score": "134B tokens",
       "rank": 6,
-      "update_time": "2025-07-09T19:50:13.109852+08:00"
+      "update_time": "2025-07-09T19:52:06.420384+08:00"
     },
     {
-      "name": "gpt-4-turbo-2024-04-09",
-      "score": "4.2%",
+      "name": "Gemini 2.5 Flash",
+      "score": "110B tokens",
       "rank": 7,
-      "update_time": "2025-07-09T19:50:13.109852+08:00"
+      "update_time": "2025-07-09T19:52:06.420384+08:00"
     },
     {
-      "name": "gemini-1.5-pro-002",
-      "score": "3.8%",
+      "name": "Claude 3.7 Sonnet",
+      "score": "59.2B tokens",
       "rank": 8,
-      "update_time": "2025-07-09T19:50:13.109852+08:00"
+      "update_time": "2025-07-09T19:52:06.420384+08:00"
     },
     {
-      "name": "llama-3.3-70b-instruct",
-      "score": "3.1%",
+      "name": "GPT-4o-mini",
+      "score": "40.4B tokens",
       "rank": 9,
-      "update_time": "2025-07-09T19:50:13.109852+08:00"
+      "update_time": "2025-07-09T19:52:06.420384+08:00"
     },
     {
-      "name": "qwen-2.5-coder-32b-instruct",
-      "score": "2.6%",
+      "name": "R1 0528 (free)",
+      "score": "37.9B tokens",
       "rank": 10,
-      "update_time": "2025-07-09T19:50:13.109852+08:00"
+      "update_time": "2025-07-09T19:52:06.420386+08:00"
     }
   ],
-  "analysis": "Claude 3.5 Sonnet dominates programming tasks with 31.2% usage, followed by GPT-4o at 18.5%. The top 3 models account for over 60% of programming-related usage. There's a clear preference for newer, more capable models in programming contexts, with Claude and GPT models leading the rankings. The distribution shows a long tail with smaller models capturing niche use cases.",
-  "analysis_zh": "Claude 3.5 Sonnet以31.2%的使用率主导编程任务，GPT-4o以18.5%紧随其后。前3个模型占编程相关使用量的60%以上。在编程环境中，明显偏好更新、更强大的模型，Claude和GPT模型领先排名。分布显示长尾效应，较小模型占据细分用例。"
+  "analysis": "The rankings show Claude Sonnet 4 and Gemini models dominating the top spots in token usage. DeepSeek also has a strong presence. GPT-4o-mini is also in the top 10. The market share data shows Google, Deepseek, Anthropic, and OpenAI as the leading model authors. The Programming category is visible and can be used to filter the models.",
+  "analysis_zh": "排名显示，Claude Sonnet 4 和 Gemini 模型在令牌使用量方面占据主导地位。 DeepSeek 也占有重要地位。 GPT-4o-mini 也在前 10 名中。 市场份额数据显示，Google、Deepseek、Anthropic 和 OpenAI 是领先的模型作者。 可以看到“编程”类别，可用于过滤模型。"
 }
