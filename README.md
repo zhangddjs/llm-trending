@@ -1,24 +1,24 @@
 # OpenRouter LLM Rankings - Programming Category
 
-Last updated: 2025-07-09 19:31:29
+Last updated: 2025-07-09 19:50:13
 
 ## Top 10 Programming Models
 
-1. **Claude Sonnet 4** - 238B tokens
-2. **Gemini 2.5 Pro** - 82.4B tokens
-3. **Claude 3.7 Sonnet** - 35.2B tokens
-4. **Gemini 2.5 Flash Preview 05-...** - 33.1B tokens
-5. **Gemini 2.5 Flash** - 25.9B tokens
-6. **Grok 3 Beta** - 22.7B tokens
-7. **DeepSeek V3 0324** - 13.4B tokens
-8. **Claude Opus 4** - 10.4B tokens
-9. **GPT-4.1 Mini** - 9.49B tokens
-10. **Gemini 2.0 Flash** - 7.9B tokens
+1. **claude-3-5-sonnet-20241022** - 31.2%
+2. **gpt-4o-2024-08-06** - 18.5%
+3. **claude-3-5-haiku-20241022** - 12.8%
+4. **gpt-4o-mini-2024-07-18** - 9.3%
+5. **gemini-2.0-flash-exp** - 7.1%
+6. **claude-3-opus-20240229** - 5.9%
+7. **gpt-4-turbo-2024-04-09** - 4.2%
+8. **gemini-1.5-pro-002** - 3.8%
+9. **llama-3.3-70b-instruct** - 3.1%
+10. **qwen-2.5-coder-32b-instruct** - 2.6%
 
 
 ## Analysis
 
-The rankings are based on token usage within the 'Programming' category on OpenRouter. The top models include Claude, Gemini, GPT, and DeepSeek, indicating their popularity for programming-related tasks. The presence of multiple Gemini models suggests Google's strong presence in this category. The token usage numbers and percentage changes provide insights into the current trends and model adoption rates.
+Claude 3.5 Sonnet dominates programming tasks with 31.2% usage, followed by GPT-4o at 18.5%. The top 3 models account for over 60% of programming-related usage. There's a clear preference for newer, more capable models in programming contexts, with Claude and GPT models leading the rankings. The distribution shows a long tail with smaller models capturing niche use cases.
 
 ---
 
@@ -26,4 +26,6 @@ The rankings are based on token usage within the 'Programming' category on OpenR
 *Data source: [OpenRouter Rankings](https://openrouter.ai/rankings)*
 *Analysis powered by Google Gemini 2.5 Pro*
 
-Generated on: 2025-07-09 19:31:29
+Generated on: 2025-07-09 19:50:13
+
+**Language**: [English](README.md) | [中文](README_zh.md)

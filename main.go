@@ -23,10 +23,11 @@ type ModelRanking struct {
 }
 
 type RankingData struct {
-	Category string         `json:"category"`
-	Date     time.Time      `json:"date"`
-	Models   []ModelRanking `json:"models"`
-	Analysis string         `json:"analysis"`
+	Category   string         `json:"category"`
+	Date       time.Time      `json:"date"`
+	Models     []ModelRanking `json:"models"`
+	Analysis   string         `json:"analysis"`
+	AnalysisZh string         `json:"analysis_zh"`
 }
 
 func main() {
@@ -40,7 +41,7 @@ func main() {
 			log.Fatal(err)
 		}
 		
-		if err := updateReadme(rankings); err != nil {
+		if err := updateReadmes(rankings); err != nil {
 			log.Fatal(err)
 		}
 		
@@ -60,7 +61,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	if err := updateReadme(rankings); err != nil {
+	if err := updateReadmes(rankings); err != nil {
 		log.Fatal(err)
 	}
 
@@ -185,6 +186,7 @@ func analyzeScreenshotWithGemini(apiKey, screenshotPath string) (*RankingData, e
 2. Extract the top 10 models with their names and usage percentages or scores
 3. Focus on programming-related models like Claude, GPT, Gemini, LLaMA, Qwen, etc.
 4. Provide a brief analysis of the ranking trends
+5. Also provide a Chinese translation of the analysis
 
 Please respond in the following JSON format:
 {
@@ -195,7 +197,8 @@ Please respond in the following JSON format:
       "rank": 1
     }
   ],
-  "analysis": "Brief analysis of the rankings and trends",
+  "analysis": "Brief analysis of the rankings and trends in English",
+  "analysis_zh": "Brief analysis of the rankings and trends in Chinese",
   "category": "Programming"
 }
 
@@ -246,8 +249,9 @@ func parseGeminiResponse(responseText string) (*RankingData, error) {
 			Score string `json:"score"`
 			Rank  int    `json:"rank"`
 		} `json:"models"`
-		Analysis string `json:"analysis"`
-		Category string `json:"category"`
+		Analysis   string `json:"analysis"`
+		AnalysisZh string `json:"analysis_zh"`
+		Category   string `json:"category"`
 	}
 	
 	if err := json.Unmarshal([]byte(jsonStr), &geminiResp); err != nil {
@@ -256,10 +260,11 @@ func parseGeminiResponse(responseText string) (*RankingData, error) {
 
 	// Convert to RankingData
 	rankings := &RankingData{
-		Category: geminiResp.Category,
-		Date:     time.Now(),
-		Analysis: geminiResp.Analysis,
-		Models:   []ModelRanking{},
+		Category:   geminiResp.Category,
+		Date:       time.Now(),
+		Analysis:   geminiResp.Analysis,
+		AnalysisZh: geminiResp.AnalysisZh,
+		Models:     []ModelRanking{},
 	}
 
 	for _, model := range geminiResp.Models {
@@ -276,9 +281,10 @@ func parseGeminiResponse(responseText string) (*RankingData, error) {
 
 func createMockRankings() *RankingData {
 	return &RankingData{
-		Category: "Programming",
-		Date:     time.Now(),
-		Analysis: "Mock data used as fallback due to screenshot capture issues.",
+		Category:   "Programming",
+		Date:       time.Now(),
+		Analysis:   "Mock data used as fallback due to screenshot capture issues.",
+		AnalysisZh: "由于截图捕获问题，使用模拟数据作为备用方案。",
 		Models: []ModelRanking{
 			{"claude-3-5-sonnet-20241022", "31.2%", 1, time.Now()},
 			{"gpt-4o-2024-08-06", "18.5%", 2, time.Now()},
@@ -304,7 +310,22 @@ func saveRankings(rankings *RankingData) error {
 	return os.WriteFile(filename, data, 0644)
 }
 
-func updateReadme(rankings *RankingData) error {
+func updateReadmes(rankings *RankingData) error {
+	// Generate English README
+	if err := updateEnglishReadme(rankings); err != nil {
+		return fmt.Errorf("failed to update English README: %w", err)
+	}
+	
+	// Generate Chinese README
+	if err := updateChineseReadme(rankings); err != nil {
+		return fmt.Errorf("failed to update Chinese README: %w", err)
+	}
+	
+	fmt.Println("✅ Generated both English (README.md) and Chinese (README_zh.md) versions")
+	return nil
+}
+
+func updateEnglishReadme(rankings *RankingData) error {
 	readmeContent := fmt.Sprintf(`# OpenRouter LLM Rankings - Programming Category
 
 Last updated: %s
@@ -330,7 +351,88 @@ Last updated: %s
 *Analysis powered by Google Gemini 2.5 Pro*
 
 Generated on: %s
+
+**Language**: [English](README.md) | [中文](README_zh.md)
 `, rankings.Analysis, time.Now().Format("2006-01-02 15:04:05"))
 
 	return os.WriteFile("README.md", []byte(readmeContent), 0644)
+}
+
+func updateChineseReadme(rankings *RankingData) error {
+	// Use Chinese analysis if available, otherwise translate English
+	var chineseAnalysis string
+	if rankings.AnalysisZh != "" {
+		chineseAnalysis = rankings.AnalysisZh
+	} else {
+		chineseAnalysis = translateAnalysisToChinese(rankings.Analysis)
+	}
+	
+	readmeContent := fmt.Sprintf(`# OpenRouter LLM 排名 - 编程类别
+
+最后更新: %s
+
+## 编程模型 Top 10
+
+`, rankings.Date.Format("2006-01-02 15:04:05"))
+
+	for _, model := range rankings.Models {
+		readmeContent += fmt.Sprintf("%d. **%s** - %s\n", model.Rank, model.Name, model.Score)
+	}
+
+	readmeContent += fmt.Sprintf(`
+
+## 分析报告
+
+%s
+
+---
+
+*此排名通过 GitHub Actions 使用截图分析和 AI 技术每周自动更新。*
+*数据来源: [OpenRouter Rankings](https://openrouter.ai/rankings)*
+*分析技术: Google Gemini 2.5 Pro*
+
+生成时间: %s
+
+**语言**: [English](README.md) | [中文](README_zh.md)
+`, chineseAnalysis, time.Now().Format("2006-01-02 15:04:05"))
+
+	return os.WriteFile("README_zh.md", []byte(readmeContent), 0644)
+}
+
+func translateAnalysisToChinese(englishAnalysis string) string {
+	// Simple translation mapping for common analysis patterns
+	translations := map[string]string{
+		"Mock data used as fallback due to screenshot capture issues.": "由于截图捕获问题，使用模拟数据作为备用方案。",
+		"Claude": "Claude",
+		"GPT": "GPT", 
+		"Gemini": "Gemini",
+		"DeepSeek": "DeepSeek",
+		"dominated": "主导",
+		"leading": "领先",
+		"strong presence": "强势表现",
+		"market share": "市场份额",
+		"Programming category": "编程类别",
+		"tokens": "token",
+		"variants": "变体",
+		"The top models are": "顶级模型",
+		"followed by": "其次是",
+	}
+	
+	// If it's the fallback message, return Chinese directly
+	if englishAnalysis == "Mock data used as fallback due to screenshot capture issues." {
+		return translations[englishAnalysis]
+	}
+	
+	// For other analysis, try basic translation
+	chineseText := englishAnalysis
+	for en, zh := range translations {
+		chineseText = strings.ReplaceAll(chineseText, en, zh)
+	}
+	
+	// If no translation found, add a note
+	if chineseText == englishAnalysis {
+		return fmt.Sprintf("%s\n\n*注：此分析为英文原文，建议添加中文翻译。*", englishAnalysis)
+	}
+	
+	return chineseText
 }

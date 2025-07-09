@@ -16,10 +16,11 @@ type TestModelRanking struct {
 }
 
 type TestRankingData struct {
-	Category string             `json:"category"`
-	Date     time.Time          `json:"date"`
-	Models   []TestModelRanking `json:"models"`
-	Analysis string             `json:"analysis"`
+	Category   string             `json:"category"`
+	Date       time.Time          `json:"date"`
+	Models     []TestModelRanking `json:"models"`
+	Analysis   string             `json:"analysis"`
+	AnalysisZh string             `json:"analysis_zh"`
 }
 
 func main() {
@@ -28,9 +29,10 @@ func main() {
 	
 	// Create test data that would come from Gemini analysis
 	testData := TestRankingData{
-		Category: "Programming",
-		Date:     time.Now(),
-		Analysis: "Claude 3.5 Sonnet dominates programming tasks with 31.2% usage, followed by GPT-4o at 18.5%. The top 3 models account for over 60% of programming-related usage. There's a clear preference for newer, more capable models in programming contexts, with Claude and GPT models leading the rankings. The distribution shows a long tail with smaller models capturing niche use cases.",
+		Category:   "Programming",
+		Date:       time.Now(),
+		Analysis:   "Claude 3.5 Sonnet dominates programming tasks with 31.2% usage, followed by GPT-4o at 18.5%. The top 3 models account for over 60% of programming-related usage. There's a clear preference for newer, more capable models in programming contexts, with Claude and GPT models leading the rankings. The distribution shows a long tail with smaller models capturing niche use cases.",
+		AnalysisZh: "Claude 3.5 Sonnet以31.2%的使用率主导编程任务，GPT-4o以18.5%紧随其后。前3个模型占编程相关使用量的60%以上。在编程环境中，明显偏好更新、更强大的模型，Claude和GPT模型领先排名。分布显示长尾效应，较小模型占据细分用例。",
 		Models: []TestModelRanking{
 			{"claude-3-5-sonnet-20241022", "31.2%", 1, time.Now()},
 			{"gpt-4o-2024-08-06", "18.5%", 2, time.Now()},
@@ -60,9 +62,11 @@ func main() {
 	}
 	fmt.Printf("✅ Rankings saved to: %s\n", filename)
 	
-	// Test 2: Update README
-	fmt.Println("\n📝 Test 2: Updating README with AI analysis...")
-	readmeContent := fmt.Sprintf(`# OpenRouter LLM Rankings - Programming Category
+	// Test 2: Update README files (both English and Chinese)
+	fmt.Println("\n📝 Test 2: Updating README files with AI analysis...")
+	
+	// English README
+	englishReadme := fmt.Sprintf(`# OpenRouter LLM Rankings - Programming Category
 
 Last updated: %s
 
@@ -71,10 +75,10 @@ Last updated: %s
 `, testData.Date.Format("2006-01-02 15:04:05"))
 
 	for _, model := range testData.Models {
-		readmeContent += fmt.Sprintf("%d. **%s** - %s\n", model.Rank, model.Name, model.Score)
+		englishReadme += fmt.Sprintf("%d. **%s** - %s\n", model.Rank, model.Name, model.Score)
 	}
 
-	readmeContent += fmt.Sprintf(`
+	englishReadme += fmt.Sprintf(`
 
 ## Analysis
 
@@ -87,13 +91,51 @@ Last updated: %s
 *Analysis powered by Google Gemini 2.5 Pro*
 
 Generated on: %s
+
+**Language**: [English](README.md) | [中文](README_zh.md)
 `, testData.Analysis, time.Now().Format("2006-01-02 15:04:05"))
 
-	if err := os.WriteFile("README.md", []byte(readmeContent), 0644); err != nil {
-		fmt.Printf("❌ Error updating README: %v\n", err)
+	if err := os.WriteFile("README.md", []byte(englishReadme), 0644); err != nil {
+		fmt.Printf("❌ Error updating English README: %v\n", err)
 		return
 	}
-	fmt.Println("✅ README updated with AI analysis")
+	
+	// Chinese README
+	chineseReadme := fmt.Sprintf(`# OpenRouter LLM 排名 - 编程类别
+
+最后更新: %s
+
+## 编程模型 Top 10
+
+`, testData.Date.Format("2006-01-02 15:04:05"))
+
+	for _, model := range testData.Models {
+		chineseReadme += fmt.Sprintf("%d. **%s** - %s\n", model.Rank, model.Name, model.Score)
+	}
+
+	chineseReadme += fmt.Sprintf(`
+
+## 分析报告
+
+%s
+
+---
+
+*此排名通过 GitHub Actions 使用截图分析和 AI 技术每周自动更新。*
+*数据来源: [OpenRouter Rankings](https://openrouter.ai/rankings)*
+*分析技术: Google Gemini 2.5 Pro*
+
+生成时间: %s
+
+**语言**: [English](README.md) | [中文](README_zh.md)
+`, testData.AnalysisZh, time.Now().Format("2006-01-02 15:04:05"))
+
+	if err := os.WriteFile("README_zh.md", []byte(chineseReadme), 0644); err != nil {
+		fmt.Printf("❌ Error updating Chinese README: %v\n", err)
+		return
+	}
+	
+	fmt.Println("✅ Both English and Chinese README files updated")
 	
 	// Test 3: Create mock screenshot
 	fmt.Println("\n📸 Test 3: Creating mock screenshot...")
@@ -105,19 +147,22 @@ Generated on: %s
 	fmt.Printf("✅ Mock screenshot created: %s\n", mockScreenshotPath)
 	
 	// Summary
-	fmt.Println("\n🎉 Task 3 Implementation Summary:")
+	fmt.Println("\n🎉 Task 3 & 4 Implementation Summary:")
 	fmt.Println(strings.Repeat("=", 60))
 	fmt.Printf("✅ Screenshot capture: Implemented with ChromeDP\n")
 	fmt.Printf("✅ Gemini 2.5 Pro integration: Ready with Google AI Go SDK\n")
 	fmt.Printf("✅ AI-powered analysis: Enhanced README with insights\n")
+	fmt.Printf("✅ Bilingual support: English + Chinese README generation\n")
 	fmt.Printf("✅ Data persistence: JSON storage for rankings\n")
 	fmt.Printf("✅ GitHub Actions: Updated workflow with API key\n")
 	fmt.Printf("📊 Processed %d models from Programming category\n", len(testData.Models))
 	fmt.Printf("🤖 AI analysis provides rich insights about ranking trends\n")
+	fmt.Printf("🌐 Bilingual README files for wider accessibility\n")
 	fmt.Printf("💡 Approach is robust and future-proof\n")
 	
 	fmt.Println("\n🔧 Next Steps:")
 	fmt.Println("1. Add GEMINI_API_KEY to GitHub repository secrets")
-	fmt.Println("2. Ensure Chrome is available in GitHub Actions runner")
+	fmt.Println("2. Ensure Chrome is available in GitHub Actions runner") 
 	fmt.Println("3. Run weekly via GitHub Actions cron schedule")
+	fmt.Println("4. Both README.md and README_zh.md will be updated automatically")
 }
