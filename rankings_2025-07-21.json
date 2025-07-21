@@ -1,0 +1,68 @@
+{
+  "category": "Programming",
+  "date": "2025-07-21T10:24:23.760343+08:00",
+  "models": [
+    {
+      "name": "Claude Sonnet 4",
+      "score": "367B tokens",
+      "rank": 1,
+      "update_time": "2025-07-21T10:24:23.760343+08:00"
+    },
+    {
+      "name": "Gemini 2.0 Flash",
+      "score": "276B tokens",
+      "rank": 2,
+      "update_time": "2025-07-21T10:24:23.760343+08:00"
+    },
+    {
+      "name": "DeepSeek V3 0324 (free)",
+      "score": "233B tokens",
+      "rank": 3,
+      "update_time": "2025-07-21T10:24:23.760343+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash",
+      "score": "219B tokens",
+      "rank": 4,
+      "update_time": "2025-07-21T10:24:23.760344+08:00"
+    },
+    {
+      "name": "DeepSeek V3 0324",
+      "score": "163B tokens",
+      "rank": 5,
+      "update_time": "2025-07-21T10:24:23.760344+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Pro",
+      "score": "155B tokens",
+      "rank": 6,
+      "update_time": "2025-07-21T10:24:23.760346+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash Lite Preview...",
+      "score": "74.1B tokens",
+      "rank": 7,
+      "update_time": "2025-07-21T10:24:23.760346+08:00"
+    },
+    {
+      "name": "R1 0528 (free)",
+      "score": "63.3B tokens",
+      "rank": 8,
+      "update_time": "2025-07-21T10:24:23.760346+08:00"
+    },
+    {
+      "name": "Claude 3.7 Sonnet",
+      "score": "61B tokens",
+      "rank": 9,
+      "update_time": "2025-07-21T10:24:23.760346+08:00"
+    },
+    {
+      "name": "Kimi K2",
+      "score": "50.8B tokens",
+      "rank": 10,
+      "update_time": "2025-07-21T10:24:23.760347+08:00"
+    }
+  ],
+  "analysis": "The top models by token usage are dominated by Claude and Gemini variants, with DeepSeek also showing strong performance. The presence of multiple versions of the same model (e.g., Gemini Flash) suggests experimentation and optimization by users. The 'Market Share' section shows Google leading, followed by DeepSeek and Anthropic. The 'Programming' category rankings show Claude Sonnet 4, Gemini 2.5 Pro, Gemini 2.5 Flash, Grok 4, Kimi K2, Claude 3.7 Sonnet, Claude Opus 4, DeepSeek V3 0324, GPT-4.1, and Gemini 2.5 Flash Lite Preview...",
+  "analysis_zh": "按token使用量排名的顶级模型主要由Claude和Gemini的变体占据，DeepSeek也表现出强劲的性能。同一模型的多个版本（例如，Gemini Flash）的存在表明用户正在进行实验和优化。“市场份额”部分显示谷歌领先，其次是DeepSeek和Anthropic。“编程”类别排名显示Claude Sonnet 4、Gemini 2.5 Pro、Gemini 2.5 Flash、Grok 4、Kimi K2、Claude 3.7 Sonnet、Claude Opus 4、DeepSeek V3 0324、GPT-4.1 和 Gemini 2.5 Flash Lite Preview..."
+}
