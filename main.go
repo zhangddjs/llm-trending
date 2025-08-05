@@ -125,15 +125,11 @@ func captureScreenshot() (string, error) {
 		chromedp.WaitVisible("body", chromedp.ByQuery),
 		chromedp.Sleep(10*time.Second), // Wait for dynamic content
 		chromedp.ActionFunc(func(ctx context.Context) error {
-			fmt.Println("🔍 Looking for Programming category...")
-			// Try to click on Programming category, but don't fail if not found
-			err := chromedp.Click(`button[data-category="Programming"], .category-button:contains("Programming"), [aria-label*="Programming"]`, chromedp.NodeVisible, chromedp.ByQuery).Do(ctx)
-			if err != nil {
-				fmt.Println("⚠️  Programming category button not found, using general rankings")
-			}
-			return nil // Don't fail if category button not found
+			fmt.Println("🔍 Capturing main leaderboard...")
+			// No need to click any category buttons - we want the main leaderboard
+			return nil
 		}),
-		chromedp.Sleep(5*time.Second), // Wait for any category change
+		chromedp.Sleep(2*time.Second), // Wait for content to load
 		chromedp.ActionFunc(func(ctx context.Context) error {
 			fmt.Println("📸 Taking screenshot...")
 			return chromedp.FullScreenshot(&buf, 90).Do(ctx)
@@ -182,10 +178,10 @@ func analyzeScreenshotWithGemini(apiKey, screenshotPath string) (*RankingData, e
 	// Create prompt for analysis
 	prompt := `Analyze this screenshot of the OpenRouter AI rankings page and extract the following information:
 
-1. Identify the Programming category rankings (if visible)
-2. Extract the top 10 models with their names and usage percentages or scores
-3. Focus on programming-related models like Claude, GPT, Gemini, LLaMA, Qwen, etc.
-4. Provide a brief analysis of the ranking trends
+1. Look at the main LEADERBOARD section at the top of the page (not the Categories section at the bottom)
+2. Extract the top 10 models from the Leaderboard with their names and usage statistics/scores
+3. The Leaderboard should show models like Claude Sonnet 4, Gemini 2.5 Flash, DeepSeek, etc. with their usage numbers
+4. Provide a brief analysis of the ranking trends based on the main leaderboard
 5. Also provide a Chinese translation of the analysis
 
 Please respond in the following JSON format:
@@ -193,16 +189,16 @@ Please respond in the following JSON format:
   "models": [
     {
       "name": "model-name",
-      "score": "percentage or score",
+      "score": "usage number or percentage",
       "rank": 1
     }
   ],
-  "analysis": "Brief analysis of the rankings and trends in English",
-  "analysis_zh": "Brief analysis of the rankings and trends in Chinese",
-  "category": "Programming"
+  "analysis": "Brief analysis of the main leaderboard rankings and trends in English",
+  "analysis_zh": "Brief analysis of the main leaderboard rankings and trends in Chinese",
+  "category": "General"
 }
 
-If you cannot clearly identify the Programming category, analyze the general rankings visible and note this in the analysis.`
+Focus ONLY on the main Leaderboard section, ignore any Categories or Market Share sections.`
 
 	// Create the request
 	resp, err := model.GenerateContent(ctx, 
@@ -281,7 +277,7 @@ func parseGeminiResponse(responseText string) (*RankingData, error) {
 
 func createMockRankings() *RankingData {
 	return &RankingData{
-		Category:   "Programming",
+		Category:   "General",
 		Date:       time.Now(),
 		Analysis:   "Mock data used as fallback due to screenshot capture issues.",
 		AnalysisZh: "由于截图捕获问题，使用模拟数据作为备用方案。",
@@ -326,11 +322,11 @@ func updateReadmes(rankings *RankingData) error {
 }
 
 func updateEnglishReadme(rankings *RankingData) error {
-	readmeContent := fmt.Sprintf(`# OpenRouter LLM Rankings - Programming Category
+	readmeContent := fmt.Sprintf(`# OpenRouter LLM Rankings - Main Leaderboard
 
 Last updated: %s
 
-## Top 10 Programming Models
+## Top 10 Models
 
 `, rankings.Date.Format("2006-01-02 15:04:05"))
 
@@ -367,11 +363,11 @@ func updateChineseReadme(rankings *RankingData) error {
 		chineseAnalysis = translateAnalysisToChinese(rankings.Analysis)
 	}
 	
-	readmeContent := fmt.Sprintf(`# OpenRouter LLM 排名 - 编程类别
+	readmeContent := fmt.Sprintf(`# OpenRouter LLM 排名 - 主排行榜
 
 最后更新: %s
 
-## 编程模型 Top 10
+## 模型 Top 10
 
 `, rankings.Date.Format("2006-01-02 15:04:05"))
 

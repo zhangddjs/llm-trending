@@ -2,6 +2,7 @@
 .env
 
 # Go binaries
+main
 *.exe
 *.exe~
 *.dll

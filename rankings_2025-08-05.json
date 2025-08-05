@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2025-08-05T11:32:47.11163+08:00",
+  "models": [
+    {
+      "name": "Claude Sonnet 4",
+      "score": "586B tokens",
+      "rank": 1,
+      "update_time": "2025-08-05T11:32:47.11163+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash",
+      "score": "298B tokens",
+      "rank": 2,
+      "update_time": "2025-08-05T11:32:47.11163+08:00"
+    },
+    {
+      "name": "Gemini 2.0 Flash",
+      "score": "266B tokens",
+      "rank": 3,
+      "update_time": "2025-08-05T11:32:47.111631+08:00"
+    },
+    {
+      "name": "DeepSeek V3 0324 (free)",
+      "score": "210B tokens",
+      "rank": 4,
+      "update_time": "2025-08-05T11:32:47.111631+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Pro",
+      "score": "161B tokens",
+      "rank": 5,
+      "update_time": "2025-08-05T11:32:47.111631+08:00"
+    },
+    {
+      "name": "Qwen3 Coder (free)",
+      "score": "158B tokens",
+      "rank": 6,
+      "update_time": "2025-08-05T11:32:47.111632+08:00"
+    },
+    {
+      "name": "DeepSeek V3 0324",
+      "score": "154B tokens",
+      "rank": 7,
+      "update_time": "2025-08-05T11:32:47.111632+08:00"
+    },
+    {
+      "name": "Claude 3.7 Sonnet",
+      "score": "129B tokens",
+      "rank": 8,
+      "update_time": "2025-08-05T11:32:47.111632+08:00"
+    },
+    {
+      "name": "Qwen3 Coder",
+      "score": "119B tokens",
+      "rank": 9,
+      "update_time": "2025-08-05T11:32:47.111632+08:00"
+    },
+    {
+      "name": "Horizon Beta",
+      "score": "117B tokens",
+      "rank": 10,
+      "update_time": "2025-08-05T11:32:47.111634+08:00"
+    }
+  ],
+  "analysis": "Claude Sonnet 4 leads in token usage, followed by Gemini 2.5 Flash and Gemini 2.0 Flash. DeepSeek models also have a significant presence. Qwen3 Coder models are also in the top 10. Horizon Beta is a new model in the top 10.",
+  "analysis_zh": "Claude Sonnet 4 在 token 使用量方面领先，其次是 Gemini 2.5 Flash 和 Gemini 2.0 Flash。 DeepSeek 模型也占有重要地位。 Qwen3 Coder 模型也在前 10 名之列。 Horizon Beta 是前 10 名中的新模型。"
+}

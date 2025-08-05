@@ -1,24 +1,24 @@
-# OpenRouter LLM Rankings - Programming Category
+# OpenRouter LLM Rankings - Main Leaderboard
 
-Last updated: 2025-07-21 10:24:23
+Last updated: 2025-08-05 11:32:47
 
-## Top 10 Programming Models
+## Top 10 Models
 
-1. **Claude Sonnet 4** - 367B tokens
-2. **Gemini 2.0 Flash** - 276B tokens
-3. **DeepSeek V3 0324 (free)** - 233B tokens
-4. **Gemini 2.5 Flash** - 219B tokens
-5. **DeepSeek V3 0324** - 163B tokens
-6. **Gemini 2.5 Pro** - 155B tokens
-7. **Gemini 2.5 Flash Lite Preview...** - 74.1B tokens
-8. **R1 0528 (free)** - 63.3B tokens
-9. **Claude 3.7 Sonnet** - 61B tokens
-10. **Kimi K2** - 50.8B tokens
+1. **Claude Sonnet 4** - 586B tokens
+2. **Gemini 2.5 Flash** - 298B tokens
+3. **Gemini 2.0 Flash** - 266B tokens
+4. **DeepSeek V3 0324 (free)** - 210B tokens
+5. **Gemini 2.5 Pro** - 161B tokens
+6. **Qwen3 Coder (free)** - 158B tokens
+7. **DeepSeek V3 0324** - 154B tokens
+8. **Claude 3.7 Sonnet** - 129B tokens
+9. **Qwen3 Coder** - 119B tokens
+10. **Horizon Beta** - 117B tokens
 
 
 ## Analysis
 
-The top models by token usage are dominated by Claude and Gemini variants, with DeepSeek also showing strong performance. The presence of multiple versions of the same model (e.g., Gemini Flash) suggests experimentation and optimization by users. The 'Market Share' section shows Google leading, followed by DeepSeek and Anthropic. The 'Programming' category rankings show Claude Sonnet 4, Gemini 2.5 Pro, Gemini 2.5 Flash, Grok 4, Kimi K2, Claude 3.7 Sonnet, Claude Opus 4, DeepSeek V3 0324, GPT-4.1, and Gemini 2.5 Flash Lite Preview...
+Claude Sonnet 4 leads in token usage, followed by Gemini 2.5 Flash and Gemini 2.0 Flash. DeepSeek models also have a significant presence. Qwen3 Coder models are also in the top 10. Horizon Beta is a new model in the top 10.
 
 ---
 
@@ -26,6 +26,6 @@ The top models by token usage are dominated by Claude and Gemini variants, with 
 *Data source: [OpenRouter Rankings](https://openrouter.ai/rankings)*
 *Analysis powered by Google Gemini 2.5 Pro*
 
-Generated on: 2025-07-21 10:24:23
+Generated on: 2025-08-05 11:32:47
 
 **Language**: [English](README.md) | [中文](README_zh.md)
