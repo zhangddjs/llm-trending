@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2025-08-20T12:06:39.642894+08:00",
+  "models": [
+    {
+      "name": "Claude Sonnet 4",
+      "score": "515B tokens",
+      "rank": 1,
+      "update_time": "2025-08-20T12:06:39.642894+08:00"
+    },
+    {
+      "name": "Gemini 2.0 Flash",
+      "score": "274B tokens",
+      "rank": 2,
+      "update_time": "2025-08-20T12:06:39.642894+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash",
+      "score": "267B tokens",
+      "rank": 3,
+      "update_time": "2025-08-20T12:06:39.642895+08:00"
+    },
+    {
+      "name": "DeepSeek V3 0324",
+      "score": "159B tokens",
+      "rank": 4,
+      "update_time": "2025-08-20T12:06:39.642895+08:00"
+    },
+    {
+      "name": "Qwen3 Coder",
+      "score": "147B tokens",
+      "rank": 5,
+      "update_time": "2025-08-20T12:06:39.642895+08:00"
+    },
+    {
+      "name": "DeepSeek V3 0324 (free)",
+      "score": "141B tokens",
+      "rank": 6,
+      "update_time": "2025-08-20T12:06:39.642895+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Pro",
+      "score": "135B tokens",
+      "rank": 7,
+      "update_time": "2025-08-20T12:06:39.642895+08:00"
+    },
+    {
+      "name": "Claude 3.7 Sonnet",
+      "score": "129B tokens",
+      "rank": 8,
+      "update_time": "2025-08-20T12:06:39.642895+08:00"
+    },
+    {
+      "name": "R1 0528 (free)",
+      "score": "109B tokens",
+      "rank": 9,
+      "update_time": "2025-08-20T12:06:39.642895+08:00"
+    },
+    {
+      "name": "Kimi K2",
+      "score": "98.2B tokens",
+      "rank": 10,
+      "update_time": "2025-08-20T12:06:39.642896+08:00"
+    }
+  ],
+  "analysis": "Claude Sonnet 4 leads in token usage, followed by Gemini 2.0 Flash and Gemini 2.5 Flash. DeepSeek models also show significant usage. There's a mix of models from different providers (Anthropic, Google, DeepSeek, Qwen, Moonshotai) in the top 10, indicating a diverse landscape. The presence of both paid and free versions of DeepSeek suggests a strategy to attract users with a free tier.",
+  "analysis_zh": "Claude Sonnet 4 在 token 使用量方面领先，其次是 Gemini 2.0 Flash 和 Gemini 2.5 Flash。 DeepSeek 模型也显示出显着的使用量。 前 10 名中混合了来自不同提供商（Anthropic、Google、DeepSeek、Qwen、Moonshotai）的模型，表明生态系统的多样性。 DeepSeek 的付费版本和免费版本的存在表明了一种通过免费层吸引用户的策略。"
+}
