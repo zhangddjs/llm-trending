@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2025-09-22T09:44:44.536999+08:00",
+  "models": [
+    {
+      "name": "Grok Code Fast 1",
+      "score": "1.15T tokens",
+      "rank": 1,
+      "update_time": "2025-09-22T09:44:44.536999+08:00"
+    },
+    {
+      "name": "Claude Sonnet 4",
+      "score": "586B tokens",
+      "rank": 2,
+      "update_time": "2025-09-22T09:44:44.537+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash",
+      "score": "325B tokens",
+      "rank": 3,
+      "update_time": "2025-09-22T09:44:44.537+08:00"
+    },
+    {
+      "name": "Sonoma Sky Alpha",
+      "score": "227B tokens",
+      "rank": 4,
+      "update_time": "2025-09-22T09:44:44.537001+08:00"
+    },
+    {
+      "name": "Gemini 2.0 Flash",
+      "score": "187B tokens",
+      "rank": 5,
+      "update_time": "2025-09-22T09:44:44.537001+08:00"
+    },
+    {
+      "name": "DeepSeek V3.1 (free)",
+      "score": "180B tokens",
+      "rank": 6,
+      "update_time": "2025-09-22T09:44:44.537001+08:00"
+    },
+    {
+      "name": "Grok 4 Fast (free)",
+      "score": "158B tokens",
+      "rank": 7,
+      "update_time": "2025-09-22T09:44:44.537002+08:00"
+    },
+    {
+      "name": "GPT-4.1 Mini",
+      "score": "157B tokens",
+      "rank": 8,
+      "update_time": "2025-09-22T09:44:44.537002+08:00"
+    },
+    {
+      "name": "DeepSeek V3 0324",
+      "score": "142B tokens",
+      "rank": 9,
+      "update_time": "2025-09-22T09:44:44.537002+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Pro",
+      "score": "137B tokens",
+      "rank": 10,
+      "update_time": "2025-09-22T09:44:44.537004+08:00"
+    }
+  ],
+  "analysis": "The leaderboard shows a mix of models from different providers. Grok Code Fast 1 is leading by a significant margin. Claude Sonnet 4 and Gemini 2.5 Flash are also popular. DeepSeek models are also present in the top 10, indicating their usage. The presence of both free and paid models suggests users are experimenting with different options.",
+  "analysis_zh": "排行榜显示了来自不同供应商的各种模型。Grok Code Fast 1 以显著优势领先。Claude Sonnet 4 和 Gemini 2.5 Flash 也非常受欢迎。DeepSeek 模型也出现在前 10 名中，表明它们的使用率。免费和付费模型的同时存在表明用户正在尝试不同的选择。"
+}
