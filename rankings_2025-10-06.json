@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2025-10-06T10:32:44.341914+08:00",
+  "models": [
+    {
+      "name": "Grok Code Fast 1",
+      "score": "3.05T tokens",
+      "rank": 1,
+      "update_time": "2025-10-06T10:32:44.341914+08:00"
+    },
+    {
+      "name": "Grok 4 Fast (free)",
+      "score": "6458 tokens",
+      "rank": 2,
+      "update_time": "2025-10-06T10:32:44.341915+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash",
+      "score": "3638 tokens",
+      "rank": 3,
+      "update_time": "2025-10-06T10:32:44.341915+08:00"
+    },
+    {
+      "name": "Claude Sonnet 4",
+      "score": "3160 tokens",
+      "rank": 4,
+      "update_time": "2025-10-06T10:32:44.341915+08:00"
+    },
+    {
+      "name": "Claude Sonnet 4.5",
+      "score": "2908 tokens",
+      "rank": 5,
+      "update_time": "2025-10-06T10:32:44.341915+08:00"
+    },
+    {
+      "name": "DeepSeek V3.1 (free)",
+      "score": "2238 tokens",
+      "rank": 6,
+      "update_time": "2025-10-06T10:32:44.341916+08:00"
+    },
+    {
+      "name": "GPT-4.1 Mini",
+      "score": "1728 tokens",
+      "rank": 7,
+      "update_time": "2025-10-06T10:32:44.341916+08:00"
+    },
+    {
+      "name": "Gemini 2.0 Flash",
+      "score": "1418 tokens",
+      "rank": 8,
+      "update_time": "2025-10-06T10:32:44.341916+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash Lite",
+      "score": "1418 tokens",
+      "rank": 9,
+      "update_time": "2025-10-06T10:32:44.341916+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Pro",
+      "score": "1308 tokens",
+      "rank": 10,
+      "update_time": "2025-10-06T10:32:44.341917+08:00"
+    }
+  ],
+  "analysis": "The leaderboard shows a mix of models from different providers. Grok models are at the top, followed by Gemini and Claude models. DeepSeek and GPT-4.1 Mini also appear in the top 10. The ranking is based on token usage.",
+  "analysis_zh": "排行榜显示了来自不同供应商的模型的混合。Grok 模型位于顶部，其次是 Gemini 和 Claude 模型。DeepSeek 和 GPT-4.1 Mini 也出现在前 10 名中。排名基于令牌使用量。"
+}
