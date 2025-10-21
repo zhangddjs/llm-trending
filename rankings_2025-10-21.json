@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2025-10-21T16:37:45.409727+08:00",
+  "models": [
+    {
+      "name": "Grok Code Fast 1",
+      "score": "1,147 tokens",
+      "rank": 1,
+      "update_time": "2025-10-21T16:37:45.409727+08:00"
+    },
+    {
+      "name": "Claude Sonnet 4.5",
+      "score": "5,238 tokens",
+      "rank": 2,
+      "update_time": "2025-10-21T16:37:45.409728+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash",
+      "score": "3,028 tokens",
+      "rank": 3,
+      "update_time": "2025-10-21T16:37:45.409728+08:00"
+    },
+    {
+      "name": "Claude Sonnet 4",
+      "score": "1,678 tokens",
+      "rank": 4,
+      "update_time": "2025-10-21T16:37:45.409729+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Pro",
+      "score": "1,548 tokens",
+      "rank": 5,
+      "update_time": "2025-10-21T16:37:45.409729+08:00"
+    },
+    {
+      "name": "Gemini 2.0 Flash",
+      "score": "1,486 tokens",
+      "rank": 6,
+      "update_time": "2025-10-21T16:37:45.40973+08:00"
+    },
+    {
+      "name": "Grok 4 Fast",
+      "score": "1,478 tokens",
+      "rank": 7,
+      "update_time": "2025-10-21T16:37:45.40973+08:00"
+    },
+    {
+      "name": "DeepSeek V3 0324",
+      "score": "1,148 tokens",
+      "rank": 8,
+      "update_time": "2025-10-21T16:37:45.40973+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash Lite",
+      "score": "83.88 tokens",
+      "rank": 9,
+      "update_time": "2025-10-21T16:37:45.40973+08:00"
+    },
+    {
+      "name": "GPT-4o-mini",
+      "score": "80.38 tokens",
+      "rank": 10,
+      "update_time": "2025-10-21T16:37:45.409731+08:00"
+    }
+  ],
+  "analysis": "The leaderboard shows a mix of models from different providers. Claude Sonnet 4.5 is performing well, along with Gemini 2.5 Flash. Grok Code Fast 1 and Grok 4 Fast are also in the top 10, indicating popularity in code-related tasks. The presence of both Gemini 2.5 Flash and Gemini 2.5 Flash Lite suggests a focus on different performance tiers within the Gemini family. GPT-4o-mini is also present, showing the popularity of smaller, faster models.",
+  "analysis_zh": "排行榜显示了来自不同供应商的多种模型。Claude Sonnet 4.5 表现良好，Gemini 2.5 Flash 也是如此。Grok Code Fast 1 和 Grok 4 Fast 也位居前 10 名，表明它们在代码相关任务中很受欢迎。Gemini 2.5 Flash 和 Gemini 2.5 Flash Lite 的同时出现表明 Gemini 系列内部对不同性能级别的关注。GPT-4o-mini 也在其中，表明较小、更快的模型很受欢迎。"
+}
