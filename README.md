@@ -1,24 +1,24 @@
 # OpenRouter LLM Rankings - Main Leaderboard
 
-Last updated: 2025-10-21 16:37:45
+Last updated: 2025-11-05 17:06:32
 
 ## Top 10 Models
 
-1. **Grok Code Fast 1** - 1,14T tokens
-2. **Claude Sonnet 4.5** - 523B tokens
-3. **Gemini 2.5 Flash** - 302B tokens
-4. **Claude Sonnet 4** - 167B tokens
-5. **Gemini 2.5 Pro** - 154B tokens
-6. **Gemini 2.0 Flash** - 148B tokens
-7. **Grok 4 Fast** - 147B tokens
-8. **DeepSeek V3 0324** - 114B tokens
-9. **Gemini 2.5 Flash Lite** - 83.8B tokens
-10. **GPT-4o-mini** - 80.3B tokens
+1. **Grok Code Fast 1** - 1.47T tokens
+2. **Claude Sonnet 4.5** - 638B tokens
+3. **Gemini 2.5 Flash** - 325B tokens
+4. **MiniMax M2 (free)** - 304B tokens
+5. **Gemini 2.5 Pro** - 196B tokens
+6. **Grok 4 Fast** - 165B tokens
+7. **Gemini 2.0 Flash** - 155B tokens
+8. **Claude Sonnet 4** - 135B tokens
+9. **Gemini 2.5 Flash Lite** - 129B tokens
+10. **DeepSeek V3 0324** - 116B tokens
 
 
 ## Analysis
 
-The leaderboard shows a mix of models from different providers. Claude Sonnet 4.5 is performing well, along with Gemini 2.5 Flash. Grok Code Fast 1 and Grok 4 Fast are also in the top 10, indicating popularity in code-related tasks. The presence of both Gemini 2.5 Flash and Gemini 2.5 Flash Lite suggests a focus on different performance tiers within the Gemini family. GPT-4o-mini is also present, showing the popularity of smaller, faster models.
+The leaderboard shows a mix of models from different providers. Grok Code Fast 1 is at the top, followed by Claude Sonnet 4.5 and Gemini 2.5 Flash. There's a good representation of models from Grok, Anthropic, Google, and DeepSeek in the top 10, indicating a diverse range of options being used on the platform.
 
 ---
 
@@ -26,6 +26,6 @@ The leaderboard shows a mix of models from different providers. Claude Sonnet 4.
 *Data source: [OpenRouter Rankings](https://openrouter.ai/rankings)*
 *Analysis powered by Google Gemini 2.5 Pro*
 
-Generated on: 2025-10-21 16:37:45
+Generated on: 2025-11-05 17:06:32
 
 **Language**: [English](README.md) | [中文](README_zh.md)
