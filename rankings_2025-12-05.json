@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2025-12-05T10:41:39.161538+08:00",
+  "models": [
+    {
+      "name": "Grok 4.1 Fast",
+      "score": "1,487 tokens",
+      "rank": 1,
+      "update_time": "2025-12-05T10:41:39.161538+08:00"
+    },
+    {
+      "name": "Grok Code Fast 1",
+      "score": "9,258 tokens",
+      "rank": 2,
+      "update_time": "2025-12-05T10:41:39.161539+08:00"
+    },
+    {
+      "name": "Claude Sonnet 4.5",
+      "score": "4,148 tokens",
+      "rank": 3,
+      "update_time": "2025-12-05T10:41:39.161539+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash",
+      "score": "3,888 tokens",
+      "rank": 4,
+      "update_time": "2025-12-05T10:41:39.161539+08:00"
+    },
+    {
+      "name": "Gemini 2.0 Flash",
+      "score": "1,658 tokens",
+      "rank": 5,
+      "update_time": "2025-12-05T10:41:39.161539+08:00"
+    },
+    {
+      "name": "Claude Opus 4.5",
+      "score": "1,558 tokens",
+      "rank": 6,
+      "update_time": "2025-12-05T10:41:39.16154+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Pro",
+      "score": "1,558 tokens",
+      "rank": 7,
+      "update_time": "2025-12-05T10:41:39.16154+08:00"
+    },
+    {
+      "name": "Grok 4 Fast",
+      "score": "1,558 tokens",
+      "rank": 8,
+      "update_time": "2025-12-05T10:41:39.16154+08:00"
+    },
+    {
+      "name": "Gemini 3 Pro Preview",
+      "score": "1,528 tokens",
+      "rank": 9,
+      "update_time": "2025-12-05T10:41:39.16154+08:00"
+    },
+    {
+      "name": "MiniMax M2",
+      "score": "1,378 tokens",
+      "rank": 10,
+      "update_time": "2025-12-05T10:41:39.161541+08:00"
+    }
+  ],
+  "analysis": "The leaderboard shows a mix of models from different providers. Grok models are at the top, followed by Claude and Gemini models. This suggests that Grok models are currently seeing high usage on OpenRouter. There is a good distribution of models from different providers in the top 10.",
+  "analysis_zh": "排行榜显示了来自不同供应商的各种模型。Grok 模型位居榜首，其次是 Claude 和 Gemini 模型。这表明 Grok 模型目前在 OpenRouter 上的使用率很高。前 10 名中有来自不同供应商的模型的良好分布。"
+}
