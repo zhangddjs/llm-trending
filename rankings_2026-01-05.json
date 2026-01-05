@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2026-01-05T10:43:36.394395+08:00",
+  "models": [
+    {
+      "name": "Grok Code Fast 1",
+      "score": "2.25T tokens",
+      "rank": 1,
+      "update_time": "2026-01-05T10:43:36.394395+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash",
+      "score": "1.72T tokens",
+      "rank": 2,
+      "update_time": "2026-01-05T10:43:36.394396+08:00"
+    },
+    {
+      "name": "Claude Sonnet 4.5",
+      "score": "1.65T tokens",
+      "rank": 3,
+      "update_time": "2026-01-05T10:43:36.394396+08:00"
+    },
+    {
+      "name": "DeepSeek V3.2",
+      "score": "1.04T tokens",
+      "rank": 4,
+      "update_time": "2026-01-05T10:43:36.394396+08:00"
+    },
+    {
+      "name": "Mixtral 8x22B",
+      "score": "861B tokens",
+      "rank": 5,
+      "update_time": "2026-01-05T10:43:36.394396+08:00"
+    },
+    {
+      "name": "Claude Opus 4.5",
+      "score": "861B tokens",
+      "rank": 6,
+      "update_time": "2026-01-05T10:43:36.394396+08:00"
+    },
+    {
+      "name": "gpt-oss-120b",
+      "score": "793B tokens",
+      "rank": 7,
+      "update_time": "2026-01-05T10:43:36.394396+08:00"
+    },
+    {
+      "name": "Grok 4.1 Fast",
+      "score": "726B tokens",
+      "rank": 8,
+      "update_time": "2026-01-05T10:43:36.394396+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash Lite",
+      "score": "715B tokens",
+      "rank": 9,
+      "update_time": "2026-01-05T10:43:36.394396+08:00"
+    },
+    {
+      "name": "Gemini 2.0 Flash",
+      "score": "714B tokens",
+      "rank": 10,
+      "update_time": "2026-01-05T10:43:36.394397+08:00"
+    }
+  ],
+  "analysis": "The leaderboard shows a mix of models from different providers at the top. Grok Code Fast 1, Gemini 2.5 Flash, and Claude Sonnet 4.5 are the top three models. There is a strong presence of Google's Gemini models in the top 10, along with models from Anthropic (Claude), DeepSeek, and Grok. The usage numbers are in trillions of tokens, indicating substantial usage across the platform.",
+  "analysis_zh": "排行榜显示了来自不同供应商的模型的混合。 Grok Code Fast 1、Gemini 2.5 Flash 和 Claude Sonnet 4.5 是前三名模型。 前 10 名中谷歌的 Gemini 模型占有重要地位，还有来自 Anthropic (Claude)、DeepSeek 和 Grok 的模型。 使用量以万亿个 tokens 为单位，表明整个平台的使用量很大。"
+}

@@ -36,15 +36,15 @@ func main() {
 	if apiKey == "" {
 		fmt.Println("⚠️  GEMINI_API_KEY not set, using fallback mode...")
 		rankings := createMockRankings()
-		
+
 		if err := saveRankings(rankings); err != nil {
 			log.Fatal(err)
 		}
-		
+
 		if err := updateReadmes(rankings); err != nil {
 			log.Fatal(err)
 		}
-		
+
 		fmt.Println("Rankings updated successfully using fallback data!")
 		return
 	}
@@ -53,7 +53,7 @@ func main() {
 	if err != nil {
 		fmt.Printf("❌ Screenshot analysis failed: %v\n", err)
 		fmt.Println("🔄 Falling back to mock data...")
-		
+
 		rankings = createMockRankings()
 	}
 
@@ -99,10 +99,10 @@ func captureScreenshot() (string, error) {
 		chromedp.Flag("disable-dev-shm-usage", true),
 		chromedp.WindowSize(1920, 1080),
 	)
-	
+
 	allocCtx, cancel := chromedp.NewExecAllocator(context.Background(), opts...)
 	defer cancel()
-	
+
 	ctx, cancel := chromedp.NewContext(allocCtx)
 	defer cancel()
 
@@ -116,12 +116,12 @@ func captureScreenshot() (string, error) {
 	screenshotPath := filepath.Join("data", filename)
 
 	var buf []byte
-	
+
 	fmt.Println("🌐 Navigating to OpenRouter rankings page...")
-	
+
 	// Navigate and capture screenshot with better error handling
 	err := chromedp.Run(ctx,
-		chromedp.Navigate("https://openrouter.ai/rankings"),
+		chromedp.Navigate("https://openrouter.ai/rankings?view=month"),
 		chromedp.WaitVisible("body", chromedp.ByQuery),
 		chromedp.Sleep(10*time.Second), // Wait for dynamic content
 		chromedp.ActionFunc(func(ctx context.Context) error {
@@ -155,7 +155,7 @@ func captureScreenshot() (string, error) {
 
 func analyzeScreenshotWithGemini(apiKey, screenshotPath string) (*RankingData, error) {
 	ctx := context.Background()
-	
+
 	// Initialize Gemini client
 	client, err := genai.NewClient(ctx, option.WithAPIKey(apiKey))
 	if err != nil {
@@ -171,10 +171,10 @@ func analyzeScreenshotWithGemini(apiKey, screenshotPath string) (*RankingData, e
 
 	// Use Gemini 2.5 Pro model
 	model := client.GenerativeModel("gemini-2.0-flash-exp")
-	
+
 	// Configure model for structured output
 	model.SetTemperature(0.1) // Low temperature for consistent results
-	
+
 	// Create prompt for analysis
 	prompt := `Analyze this screenshot of the OpenRouter AI rankings page and extract the following information:
 
@@ -201,11 +201,11 @@ Please respond in the following JSON format:
 Focus ONLY on the main Leaderboard section, ignore any Categories or Market Share sections.`
 
 	// Create the request
-	resp, err := model.GenerateContent(ctx, 
+	resp, err := model.GenerateContent(ctx,
 		genai.Text(prompt),
 		genai.ImageData("image/png", imageData),
 	)
-	
+
 	if err != nil {
 		return nil, fmt.Errorf("failed to generate content: %w", err)
 	}
@@ -231,16 +231,16 @@ func parseGeminiResponse(responseText string) (*RankingData, error) {
 	// Find JSON content in response
 	jsonStart := strings.Index(responseText, "{")
 	jsonEnd := strings.LastIndex(responseText, "}")
-	
+
 	if jsonStart == -1 || jsonEnd == -1 {
 		return nil, fmt.Errorf("no JSON found in response")
 	}
-	
+
 	jsonStr := responseText[jsonStart : jsonEnd+1]
-	
+
 	// Parse JSON
 	var geminiResp struct {
-		Models   []struct {
+		Models []struct {
 			Name  string `json:"name"`
 			Score string `json:"score"`
 			Rank  int    `json:"rank"`
@@ -249,7 +249,7 @@ func parseGeminiResponse(responseText string) (*RankingData, error) {
 		AnalysisZh string `json:"analysis_zh"`
 		Category   string `json:"category"`
 	}
-	
+
 	if err := json.Unmarshal([]byte(jsonStr), &geminiResp); err != nil {
 		return nil, fmt.Errorf("failed to parse JSON: %w", err)
 	}
@@ -311,12 +311,12 @@ func updateReadmes(rankings *RankingData) error {
 	if err := updateEnglishReadme(rankings); err != nil {
 		return fmt.Errorf("failed to update English README: %w", err)
 	}
-	
+
 	// Generate Chinese README
 	if err := updateChineseReadme(rankings); err != nil {
 		return fmt.Errorf("failed to update Chinese README: %w", err)
 	}
-	
+
 	fmt.Println("✅ Generated both English (README.md) and Chinese (README_zh.md) versions")
 	return nil
 }
@@ -343,7 +343,7 @@ Last updated: %s
 ---
 
 *This ranking is automatically updated weekly via GitHub Actions using screenshot analysis and AI.*
-*Data source: [OpenRouter Rankings](https://openrouter.ai/rankings)*
+*Data source: [OpenRouter Rankings](https://openrouter.ai/rankings?view=month)*
 *Analysis powered by Google Gemini 2.5 Pro*
 
 Generated on: %s
@@ -362,7 +362,7 @@ func updateChineseReadme(rankings *RankingData) error {
 	} else {
 		chineseAnalysis = translateAnalysisToChinese(rankings.Analysis)
 	}
-	
+
 	readmeContent := fmt.Sprintf(`# OpenRouter LLM 排名 - 主排行榜
 
 最后更新: %s
@@ -384,7 +384,7 @@ func updateChineseReadme(rankings *RankingData) error {
 ---
 
 *此排名通过 GitHub Actions 使用截图分析和 AI 技术每周自动更新。*
-*数据来源: [OpenRouter Rankings](https://openrouter.ai/rankings)*
+*数据来源: [OpenRouter Rankings](https://openrouter.ai/rankings?view=month)*
 *分析技术: Google Gemini 2.5 Pro*
 
 生成时间: %s
@@ -399,36 +399,37 @@ func translateAnalysisToChinese(englishAnalysis string) string {
 	// Simple translation mapping for common analysis patterns
 	translations := map[string]string{
 		"Mock data used as fallback due to screenshot capture issues.": "由于截图捕获问题，使用模拟数据作为备用方案。",
-		"Claude": "Claude",
-		"GPT": "GPT", 
-		"Gemini": "Gemini",
-		"DeepSeek": "DeepSeek",
-		"dominated": "主导",
-		"leading": "领先",
-		"strong presence": "强势表现",
-		"market share": "市场份额",
+		"Claude":               "Claude",
+		"GPT":                  "GPT",
+		"Gemini":               "Gemini",
+		"DeepSeek":             "DeepSeek",
+		"dominated":            "主导",
+		"leading":              "领先",
+		"strong presence":      "强势表现",
+		"market share":         "市场份额",
 		"Programming category": "编程类别",
-		"tokens": "token",
-		"variants": "变体",
-		"The top models are": "顶级模型",
-		"followed by": "其次是",
+		"tokens":               "token",
+		"variants":             "变体",
+		"The top models are":   "顶级模型",
+		"followed by":          "其次是",
 	}
-	
+
 	// If it's the fallback message, return Chinese directly
 	if englishAnalysis == "Mock data used as fallback due to screenshot capture issues." {
 		return translations[englishAnalysis]
 	}
-	
+
 	// For other analysis, try basic translation
 	chineseText := englishAnalysis
 	for en, zh := range translations {
 		chineseText = strings.ReplaceAll(chineseText, en, zh)
 	}
-	
+
 	// If no translation found, add a note
 	if chineseText == englishAnalysis {
 		return fmt.Sprintf("%s\n\n*注：此分析为英文原文，建议添加中文翻译。*", englishAnalysis)
 	}
-	
+
 	return chineseText
 }
+
