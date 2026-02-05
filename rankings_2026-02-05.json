@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2026-02-05T17:51:12.92113+08:00",
+  "models": [
+    {
+      "name": "Claude Sonnet 4.5",
+      "score": "2.9T tokens",
+      "rank": 1,
+      "update_time": "2026-02-05T17:51:12.92113+08:00"
+    },
+    {
+      "name": "Gemini 3 Flash Preview",
+      "score": "2.36T tokens",
+      "rank": 2,
+      "update_time": "2026-02-05T17:51:12.92113+08:00"
+    },
+    {
+      "name": "Grok Code Fast 1",
+      "score": "1.92T tokens",
+      "rank": 3,
+      "update_time": "2026-02-05T17:51:12.92113+08:00"
+    },
+    {
+      "name": "Claude Opus 4.5",
+      "score": "1.88T tokens",
+      "rank": 4,
+      "update_time": "2026-02-05T17:51:12.92113+08:00"
+    },
+    {
+      "name": "DeepSeek V3.2",
+      "score": "1.8T tokens",
+      "rank": 5,
+      "update_time": "2026-02-05T17:51:12.92113+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash",
+      "score": "1.64T tokens",
+      "rank": 6,
+      "update_time": "2026-02-05T17:51:12.92113+08:00"
+    },
+    {
+      "name": "MiMo-V2-Flash (free)",
+      "score": "1.51T tokens",
+      "rank": 7,
+      "update_time": "2026-02-05T17:51:12.92113+08:00"
+    },
+    {
+      "name": "Grok 4.1 Fast",
+      "score": "1.23T tokens",
+      "rank": 8,
+      "update_time": "2026-02-05T17:51:12.92113+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash Lite",
+      "score": "1.19T tokens",
+      "rank": 9,
+      "update_time": "2026-02-05T17:51:12.92113+08:00"
+    },
+    {
+      "name": "gpt-oss-120b",
+      "score": "988B tokens",
+      "rank": 10,
+      "update_time": "2026-02-05T17:51:12.921131+08:00"
+    }
+  ],
+  "analysis": "The leaderboard shows a highly competitive landscape dominated by a few key players. Anthropic's Claude Sonnet 4.5 holds the top spot, indicating strong user preference. Google has a significant presence with three different Gemini models in the top 10, showcasing the popularity of its fast and varied offerings. Models specialized for coding, like Grok Code Fast 1, also rank very high, highlighting the demand for task-specific AI. The presence of a free model from Xiaomi (MiMo-V2-Flash) in the top 10 suggests that cost-effectiveness is a major driver of usage.",
+  "analysis_zh": "该排行榜显示了由少数几个主要参与者主导的激烈竞争格局。Anthropic 的 Claude Sonnet 4.5 位居榜首，表明用户偏好度很高。谷歌在前十名中占据了三个不同的 Gemini 模型，展示了其快速多样化产品的受欢迎程度。像 Grok Code Fast 1 这样专为编码设计的模型排名也非常高，凸显了市场对特定任务人工智能的需求。小米的一款免费模型（MiMo-V2-Flash）进入前十，表明成本效益是推动使用量的一个主要因素。"
+}

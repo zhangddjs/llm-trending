@@ -170,7 +170,7 @@ func analyzeScreenshotWithGemini(apiKey, screenshotPath string) (*RankingData, e
 	}
 
 	// Use Gemini 2.5 Pro model
-	model := client.GenerativeModel("gemini-2.0-flash-exp")
+	model := client.GenerativeModel("gemini-2.5-pro")
 
 	// Configure model for structured output
 	model.SetTemperature(0.1) // Low temperature for consistent results
@@ -203,7 +203,7 @@ Focus ONLY on the main Leaderboard section, ignore any Categories or Market Shar
 	// Create the request
 	resp, err := model.GenerateContent(ctx,
 		genai.Text(prompt),
-		genai.ImageData("image/png", imageData),
+		genai.ImageData("png", imageData),
 	)
 
 	if err != nil {
@@ -432,4 +432,3 @@ func translateAnalysisToChinese(englishAnalysis string) string {
 
 	return chineseText
 }
-
