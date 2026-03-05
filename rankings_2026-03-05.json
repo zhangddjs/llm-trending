@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2026-03-05T22:41:45.230159+08:00",
+  "models": [
+    {
+      "name": "MiniMax M2.5",
+      "score": "6.42T tokens",
+      "rank": 1,
+      "update_time": "2026-03-05T22:41:45.230159+08:00"
+    },
+    {
+      "name": "Kimi K2.5",
+      "score": "4.54T tokens",
+      "rank": 2,
+      "update_time": "2026-03-05T22:41:45.23016+08:00"
+    },
+    {
+      "name": "Gemini 3 Flash Preview",
+      "score": "3.8T tokens",
+      "rank": 3,
+      "update_time": "2026-03-05T22:41:45.23016+08:00"
+    },
+    {
+      "name": "DeepSeek V3.2",
+      "score": "3.2T tokens",
+      "rank": 4,
+      "update_time": "2026-03-05T22:41:45.23016+08:00"
+    },
+    {
+      "name": "Claude Sonnet 4.5",
+      "score": "2.53T tokens",
+      "rank": 5,
+      "update_time": "2026-03-05T22:41:45.23016+08:00"
+    },
+    {
+      "name": "Grok 4.1 Fast",
+      "score": "2.44T tokens",
+      "rank": 6,
+      "update_time": "2026-03-05T22:41:45.230161+08:00"
+    },
+    {
+      "name": "Claude Opus 4.6",
+      "score": "2.29T tokens",
+      "rank": 7,
+      "update_time": "2026-03-05T22:41:45.230161+08:00"
+    },
+    {
+      "name": "GLM 5",
+      "score": "2.1T tokens",
+      "rank": 8,
+      "update_time": "2026-03-05T22:41:45.230161+08:00"
+    },
+    {
+      "name": "Gemini 2.5 Flash",
+      "score": "1.99T tokens",
+      "rank": 9,
+      "update_time": "2026-03-05T22:41:45.230161+08:00"
+    },
+    {
+      "name": "Trinity Large Preview (free)",
+      "score": "1.98T tokens",
+      "rank": 10,
+      "update_time": "2026-03-05T22:41:45.230162+08:00"
+    }
+  ],
+  "analysis": "The leaderboard is highly dynamic, with several new models like MiniMax M2.5, Claude Opus 4.6, and GLM 5 making a strong debut in the top 10. MiniMax M2.5 has immediately claimed the top spot. There is explosive growth in usage for models like Kimi K2.5 (+972%) and the free Trinity Large Preview (+1,332%), indicating a rapid surge in their popularity. The ranking showcases a diverse and competitive landscape, with models from various providers such as Minimax, Moonshot, Google, DeepSeek, and Anthropic, highlighting a trend towards speed and efficiency with popular \"Flash\" and \"Fast\" variants.",
+  "analysis_zh": "该排行榜动态变化非常大，多个新模型如 MiniMax M2.5、Claude Opus 4.6 和 GLM 5 强势进入前十名。MiniMax M2.5 更是一经推出便占据了榜首位置。Kimi K2.5 (+972%) 和免费的 Trinity Large Preview (+1,332%) 等模型的使用量呈爆炸式增长，表明其受欢迎程度迅速飙升。该排名展示了一个多元化且竞争激烈的市场格局，上榜模型来自 Minimax、Moonshot、Google、DeepSeek 和 Anthropic 等多家供应商，同时也凸显了市场对速度和效率的追求，表现为流行的“Flash”和“Fast”版本模型广受欢迎。"
+}
