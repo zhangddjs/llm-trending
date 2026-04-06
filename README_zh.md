@@ -1,24 +1,24 @@
 # OpenRouter LLM 排名 - 主排行榜
 
-最后更新: 2026-03-05 22:41:45
+最后更新: 2026-04-06 10:29:45
 
 ## 模型 Top 10
 
-1. **MiniMax M2.5** - 6.42T tokens
-2. **Kimi K2.5** - 4.54T tokens
-3. **Gemini 3 Flash Preview** - 3.8T tokens
-4. **DeepSeek V3.2** - 3.2T tokens
-5. **Claude Sonnet 4.5** - 2.53T tokens
-6. **Grok 4.1 Fast** - 2.44T tokens
-7. **Claude Opus 4.6** - 2.29T tokens
-8. **GLM 5** - 2.1T tokens
-9. **Gemini 2.5 Flash** - 1.99T tokens
-10. **Trinity Large Preview (free)** - 1.98T tokens
+1. **MiMo - V2 - Pro** - 8.53T tokens
+2. **Step 3.5 Flash (free)** - 5.83T tokens
+3. **MiniMax M2.5** - 5.31T tokens
+4. **DeepSeek V3.2** - 4.87T tokens
+5. **Qwen3.6 Plus (free)** - 4.6T tokens
+6. **Claude Sonnet 4.6** - 4.17T tokens
+7. **Gemini 3 Flash Preview** - 4.15T tokens
+8. **Claude Opus 4.6** - 3.97T tokens
+9. **MiniMax M2.7** - 2.85T tokens
+10. **GLM 5 Turbo** - 2.67T tokens
 
 
 ## 分析报告
 
-该排行榜动态变化非常大，多个新模型如 MiniMax M2.5、Claude Opus 4.6 和 GLM 5 强势进入前十名。MiniMax M2.5 更是一经推出便占据了榜首位置。Kimi K2.5 (+972%) 和免费的 Trinity Large Preview (+1,332%) 等模型的使用量呈爆炸式增长，表明其受欢迎程度迅速飙升。该排名展示了一个多元化且竞争激烈的市场格局，上榜模型来自 Minimax、Moonshot、Google、DeepSeek 和 Anthropic 等多家供应商，同时也凸显了市场对速度和效率的追求，表现为流行的“Flash”和“Fast”版本模型广受欢迎。
+OpenRouter 的排行榜显示出一个高度动态和竞争激烈的市场。榜首位置被新兴和免费模型占据，例如“MiMo - V2 - Pro”和“Step 3.5 Flash (free)”，后者的使用量激增了261%。这表明用户对高性价比或新颖的模型有强烈的偏好。尽管来自 Anthropic (Claude Sonnet/Opus 4.6) 和 Google (Gemini 3 Flash Preview) 等主要公司的成熟模型仍位列前十，但它们并未领先。前十名中出现多个“新”模型，凸显了人工智能领域技术创新和用户采纳的快速步伐，模型的受欢迎程度可能会迅速变化。
 
 ---
 
@@ -26,6 +26,6 @@
 *数据来源: [OpenRouter Rankings](https://openrouter.ai/rankings?view=month)*
 *分析技术: Google Gemini 2.5 Pro*
 
-生成时间: 2026-03-05 22:41:45
+生成时间: 2026-04-06 10:29:45
 
 **语言**: [English](README.md) | [中文](README_zh.md)

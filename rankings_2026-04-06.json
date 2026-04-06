@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2026-04-06T10:29:45.035084+08:00",
+  "models": [
+    {
+      "name": "MiMo - V2 - Pro",
+      "score": "8.53T tokens",
+      "rank": 1,
+      "update_time": "2026-04-06T10:29:45.035085+08:00"
+    },
+    {
+      "name": "Step 3.5 Flash (free)",
+      "score": "5.83T tokens",
+      "rank": 2,
+      "update_time": "2026-04-06T10:29:45.035085+08:00"
+    },
+    {
+      "name": "MiniMax M2.5",
+      "score": "5.31T tokens",
+      "rank": 3,
+      "update_time": "2026-04-06T10:29:45.035086+08:00"
+    },
+    {
+      "name": "DeepSeek V3.2",
+      "score": "4.87T tokens",
+      "rank": 4,
+      "update_time": "2026-04-06T10:29:45.035087+08:00"
+    },
+    {
+      "name": "Qwen3.6 Plus (free)",
+      "score": "4.6T tokens",
+      "rank": 5,
+      "update_time": "2026-04-06T10:29:45.035087+08:00"
+    },
+    {
+      "name": "Claude Sonnet 4.6",
+      "score": "4.17T tokens",
+      "rank": 6,
+      "update_time": "2026-04-06T10:29:45.035087+08:00"
+    },
+    {
+      "name": "Gemini 3 Flash Preview",
+      "score": "4.15T tokens",
+      "rank": 7,
+      "update_time": "2026-04-06T10:29:45.035088+08:00"
+    },
+    {
+      "name": "Claude Opus 4.6",
+      "score": "3.97T tokens",
+      "rank": 8,
+      "update_time": "2026-04-06T10:29:45.035088+08:00"
+    },
+    {
+      "name": "MiniMax M2.7",
+      "score": "2.85T tokens",
+      "rank": 9,
+      "update_time": "2026-04-06T10:29:45.035088+08:00"
+    },
+    {
+      "name": "GLM 5 Turbo",
+      "score": "2.67T tokens",
+      "rank": 10,
+      "update_time": "2026-04-06T10:29:45.035089+08:00"
+    }
+  ],
+  "analysis": "The OpenRouter leaderboard indicates a highly dynamic and competitive market. The top ranks are dominated by new and free models, such as 'MiMo - V2 - Pro' and 'Step 3.5 Flash (free)', which has seen a massive 261% increase in usage. This suggests a strong user preference for cost-effective or novel models. While established models from major players like Anthropic (Claude Sonnet/Opus 4.6) and Google (Gemini 3 Flash Preview) remain in the top 10, they are not leading the pack. The presence of multiple 'new' models in the top 10 highlights the rapid pace of innovation and user adoption in the AI space, where model popularity can shift very quickly.",
+  "analysis_zh": "OpenRouter 的排行榜显示出一个高度动态和竞争激烈的市场。榜首位置被新兴和免费模型占据，例如“MiMo - V2 - Pro”和“Step 3.5 Flash (free)”，后者的使用量激增了261%。这表明用户对高性价比或新颖的模型有强烈的偏好。尽管来自 Anthropic (Claude Sonnet/Opus 4.6) 和 Google (Gemini 3 Flash Preview) 等主要公司的成熟模型仍位列前十，但它们并未领先。前十名中出现多个“新”模型，凸显了人工智能领域技术创新和用户采纳的快速步伐，模型的受欢迎程度可能会迅速变化。"
+}
