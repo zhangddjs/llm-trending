@@ -1,24 +1,24 @@
 # OpenRouter LLM Rankings - Main Leaderboard
 
-Last updated: 2026-04-06 10:29:45
+Last updated: 2026-05-06 11:22:02
 
 ## Top 10 Models
 
-1. **MiMo - V2 - Pro** - 8.53T tokens
-2. **Step 3.5 Flash (free)** - 5.83T tokens
-3. **MiniMax M2.5** - 5.31T tokens
-4. **DeepSeek V3.2** - 4.87T tokens
-5. **Qwen3.6 Plus (free)** - 4.6T tokens
-6. **Claude Sonnet 4.6** - 4.17T tokens
-7. **Gemini 3 Flash Preview** - 4.15T tokens
-8. **Claude Opus 4.6** - 3.97T tokens
-9. **MiniMax M2.7** - 2.85T tokens
-10. **GLM 5 Turbo** - 2.67T tokens
+1. **Claude Sonnet 4.6** - 5.68T tokens
+2. **DeepSeek V3.2** - 4.96T tokens
+3. **Hy3 preview (free)** - 4.58T tokens
+4. **Gemini 3 Flash Preview** - 4.53T tokens
+5. **Kimi K2.6** - 4.02T tokens
+6. **MiniMax M2.7** - 3.89T tokens
+7. **Claude Opus 4.6** - 3.73T tokens
+8. **MiniMax M2.5** - 3.13T tokens
+9. **Grok 4.1 Fast** - 2.73T tokens
+10. **Claude Opus 4.7** - 2.66T tokens
 
 
 ## Analysis
 
-The OpenRouter leaderboard indicates a highly dynamic and competitive market. The top ranks are dominated by new and free models, such as 'MiMo - V2 - Pro' and 'Step 3.5 Flash (free)', which has seen a massive 261% increase in usage. This suggests a strong user preference for cost-effective or novel models. While established models from major players like Anthropic (Claude Sonnet/Opus 4.6) and Google (Gemini 3 Flash Preview) remain in the top 10, they are not leading the pack. The presence of multiple 'new' models in the top 10 highlights the rapid pace of innovation and user adoption in the AI space, where model popularity can shift very quickly.
+The OpenRouter leaderboard shows a highly competitive and diverse landscape. Anthropic's Claude Sonnet 4.6 leads the pack, indicating strong user preference. However, it faces close competition from models from Chinese developers like DeepSeek (V3.2), Tencent (Hy3 preview), and Moonshotai (Kimi K2.6), which occupy prominent positions in the top 5. The presence of several "new" models in the top 10, including Tencent's free preview and Moonshotai's Kimi, highlights the rapid pace of development and the impact of pricing strategies on user adoption. The top 10 is not dominated by a single provider, featuring models from Anthropic, DeepSeek, Tencent, Google, Moonshotai, MiniMax, and xAI, showcasing a vibrant and multi-polar AI model ecosystem.
 
 ---
 
@@ -26,6 +26,6 @@ The OpenRouter leaderboard indicates a highly dynamic and competitive market. Th
 *Data source: [OpenRouter Rankings](https://openrouter.ai/rankings?view=month)*
 *Analysis powered by Google Gemini 2.5 Pro*
 
-Generated on: 2026-04-06 10:29:45
+Generated on: 2026-05-06 11:22:02
 
 **Language**: [English](README.md) | [中文](README_zh.md)

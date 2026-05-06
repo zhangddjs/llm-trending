@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2026-05-06T11:22:02.783421+08:00",
+  "models": [
+    {
+      "name": "Claude Sonnet 4.6",
+      "score": "5.68T tokens",
+      "rank": 1,
+      "update_time": "2026-05-06T11:22:02.783422+08:00"
+    },
+    {
+      "name": "DeepSeek V3.2",
+      "score": "4.96T tokens",
+      "rank": 2,
+      "update_time": "2026-05-06T11:22:02.783422+08:00"
+    },
+    {
+      "name": "Hy3 preview (free)",
+      "score": "4.58T tokens",
+      "rank": 3,
+      "update_time": "2026-05-06T11:22:02.783422+08:00"
+    },
+    {
+      "name": "Gemini 3 Flash Preview",
+      "score": "4.53T tokens",
+      "rank": 4,
+      "update_time": "2026-05-06T11:22:02.783422+08:00"
+    },
+    {
+      "name": "Kimi K2.6",
+      "score": "4.02T tokens",
+      "rank": 5,
+      "update_time": "2026-05-06T11:22:02.783422+08:00"
+    },
+    {
+      "name": "MiniMax M2.7",
+      "score": "3.89T tokens",
+      "rank": 6,
+      "update_time": "2026-05-06T11:22:02.783422+08:00"
+    },
+    {
+      "name": "Claude Opus 4.6",
+      "score": "3.73T tokens",
+      "rank": 7,
+      "update_time": "2026-05-06T11:22:02.783422+08:00"
+    },
+    {
+      "name": "MiniMax M2.5",
+      "score": "3.13T tokens",
+      "rank": 8,
+      "update_time": "2026-05-06T11:22:02.783422+08:00"
+    },
+    {
+      "name": "Grok 4.1 Fast",
+      "score": "2.73T tokens",
+      "rank": 9,
+      "update_time": "2026-05-06T11:22:02.783422+08:00"
+    },
+    {
+      "name": "Claude Opus 4.7",
+      "score": "2.66T tokens",
+      "rank": 10,
+      "update_time": "2026-05-06T11:22:02.783423+08:00"
+    }
+  ],
+  "analysis": "The OpenRouter leaderboard shows a highly competitive and diverse landscape. Anthropic's Claude Sonnet 4.6 leads the pack, indicating strong user preference. However, it faces close competition from models from Chinese developers like DeepSeek (V3.2), Tencent (Hy3 preview), and Moonshotai (Kimi K2.6), which occupy prominent positions in the top 5. The presence of several \"new\" models in the top 10, including Tencent's free preview and Moonshotai's Kimi, highlights the rapid pace of development and the impact of pricing strategies on user adoption. The top 10 is not dominated by a single provider, featuring models from Anthropic, DeepSeek, Tencent, Google, Moonshotai, MiniMax, and xAI, showcasing a vibrant and multi-polar AI model ecosystem.",
+  "analysis_zh": "OpenRouter 的排行榜显示出一个竞争激烈且多元化的格局。Anthropic 的 Claude Sonnet 4.6 位居榜首，表明了强大的用户偏好。然而，它面临着来自中国开发者的模型的激烈竞争，例如 DeepSeek (V3.2)、腾讯 (Hy3 preview) 和月之暗面 (Kimi K2.6)，这些模型在前五名中占据了重要位置。前十名中出现了几个“新”模型，包括腾讯的免费预览版和月之暗面的 Kimi，这突显了技术发展的迅猛速度以及定价策略对用户采纳的影响。前十名并未被任何单一供应商主导，而是包含了来自 Anthropic、DeepSeek、腾讯、谷歌、月之暗面、MiniMax 和 xAI 的模型，展示了一个充满活力和多极化的 AI 模型生态系统。"
+}
