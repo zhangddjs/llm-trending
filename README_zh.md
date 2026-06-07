@@ -1,24 +1,24 @@
 # OpenRouter LLM 排名 - 主排行榜
 
-最后更新: 2026-05-06 11:22:02
+最后更新: 2026-06-07 10:28:10
 
 ## 模型 Top 10
 
-1. **Claude Sonnet 4.6** - 5.68T tokens
-2. **DeepSeek V3.2** - 4.96T tokens
-3. **Hy3 preview (free)** - 4.58T tokens
-4. **Gemini 3 Flash Preview** - 4.53T tokens
-5. **Kimi K2.6** - 4.02T tokens
-6. **MiniMax M2.7** - 3.89T tokens
-7. **Claude Opus 4.6** - 3.73T tokens
-8. **MiniMax M2.5** - 3.13T tokens
-9. **Grok 4.1 Fast** - 2.73T tokens
-10. **Claude Opus 4.7** - 2.66T tokens
+1. **DeepSeek V4 Flash** - 12.1T tokens
+2. **Hy3 preview** - 12.1T tokens
+3. **Claude Opus 4.7** - 7.53T tokens
+4. **Claude Sonnet 4.6** - 7.42T tokens
+5. **Owl Alpha** - 5.57T tokens
+6. **DeepSeek V4 Pro** - 4.98T tokens
+7. **Gemini 3 Flash Preview** - 4.54T tokens
+8. **DeepSeek V3.2** - 4.45T tokens
+9. **MiMo - V2.5** - 3.53T tokens
+10. **Kimi K2.6** - 3.06T tokens
 
 
 ## 分析报告
 
-OpenRouter 的排行榜显示出一个竞争激烈且多元化的格局。Anthropic 的 Claude Sonnet 4.6 位居榜首，表明了强大的用户偏好。然而，它面临着来自中国开发者的模型的激烈竞争，例如 DeepSeek (V3.2)、腾讯 (Hy3 preview) 和月之暗面 (Kimi K2.6)，这些模型在前五名中占据了重要位置。前十名中出现了几个“新”模型，包括腾讯的免费预览版和月之暗面的 Kimi，这突显了技术发展的迅猛速度以及定价策略对用户采纳的影响。前十名并未被任何单一供应商主导，而是包含了来自 Anthropic、DeepSeek、腾讯、谷歌、月之暗面、MiniMax 和 xAI 的模型，展示了一个充满活力和多极化的 AI 模型生态系统。
+排行榜显示出激烈的竞争，DeepSeek V4 Flash 和 Hy3 preview 并列第一。一个明显的趋势是，较新或近期流行的模型（如 Hy3 preview、Owl Alpha 和 MiMo - V2.5）呈现爆炸性增长，使用量增幅均超过999%。DeepSeek 和 Anthropic 等供应商表现强势，有多个模型进入前十。榜单动态变化，既有成熟的知名模型，也有迅速崛起的新秀，同时一些模型的使用量出现下降，凸显了人工智能模型领域快节奏和竞争激烈的特点。
 
 ---
 
@@ -26,6 +26,6 @@ OpenRouter 的排行榜显示出一个竞争激烈且多元化的格局。Anthro
 *数据来源: [OpenRouter Rankings](https://openrouter.ai/rankings?view=month)*
 *分析技术: Google Gemini 2.5 Pro*
 
-生成时间: 2026-05-06 11:22:02
+生成时间: 2026-06-07 10:28:10
 
 **语言**: [English](README.md) | [中文](README_zh.md)

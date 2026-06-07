@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2026-06-07T10:28:10.514167+08:00",
+  "models": [
+    {
+      "name": "DeepSeek V4 Flash",
+      "score": "12.1T tokens",
+      "rank": 1,
+      "update_time": "2026-06-07T10:28:10.514167+08:00"
+    },
+    {
+      "name": "Hy3 preview",
+      "score": "12.1T tokens",
+      "rank": 2,
+      "update_time": "2026-06-07T10:28:10.514168+08:00"
+    },
+    {
+      "name": "Claude Opus 4.7",
+      "score": "7.53T tokens",
+      "rank": 3,
+      "update_time": "2026-06-07T10:28:10.514168+08:00"
+    },
+    {
+      "name": "Claude Sonnet 4.6",
+      "score": "7.42T tokens",
+      "rank": 4,
+      "update_time": "2026-06-07T10:28:10.514169+08:00"
+    },
+    {
+      "name": "Owl Alpha",
+      "score": "5.57T tokens",
+      "rank": 5,
+      "update_time": "2026-06-07T10:28:10.514169+08:00"
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "score": "4.98T tokens",
+      "rank": 6,
+      "update_time": "2026-06-07T10:28:10.514169+08:00"
+    },
+    {
+      "name": "Gemini 3 Flash Preview",
+      "score": "4.54T tokens",
+      "rank": 7,
+      "update_time": "2026-06-07T10:28:10.51417+08:00"
+    },
+    {
+      "name": "DeepSeek V3.2",
+      "score": "4.45T tokens",
+      "rank": 8,
+      "update_time": "2026-06-07T10:28:10.51417+08:00"
+    },
+    {
+      "name": "MiMo - V2.5",
+      "score": "3.53T tokens",
+      "rank": 9,
+      "update_time": "2026-06-07T10:28:10.51417+08:00"
+    },
+    {
+      "name": "Kimi K2.6",
+      "score": "3.06T tokens",
+      "rank": 10,
+      "update_time": "2026-06-07T10:28:10.514171+08:00"
+    }
+  ],
+  "analysis": "The leaderboard shows intense competition, with DeepSeek V4 Flash and Hy3 preview tied for the top position. There's a clear trend of explosive growth for newer or recently popular models like Hy3 preview, Owl Alpha, and MiMo - V2.5, all showing usage increases of over 999%. Providers like DeepSeek and Anthropic have a strong presence, with multiple models in the top 10. The ranking is dynamic, featuring a mix of established models and rapidly rising newcomers, with some models also showing a decline in usage, highlighting the fast-paced and competitive nature of the AI model landscape.",
+  "analysis_zh": "排行榜显示出激烈的竞争，DeepSeek V4 Flash 和 Hy3 preview 并列第一。一个明显的趋势是，较新或近期流行的模型（如 Hy3 preview、Owl Alpha 和 MiMo - V2.5）呈现爆炸性增长，使用量增幅均超过999%。DeepSeek 和 Anthropic 等供应商表现强势，有多个模型进入前十。榜单动态变化，既有成熟的知名模型，也有迅速崛起的新秀，同时一些模型的使用量出现下降，凸显了人工智能模型领域快节奏和竞争激烈的特点。"
+}
