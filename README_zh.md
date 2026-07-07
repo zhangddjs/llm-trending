@@ -1,24 +1,24 @@
 # OpenRouter LLM 排名 - 主排行榜
 
-最后更新: 2026-06-07 10:28:10
+最后更新: 2026-07-07 11:34:56
 
 ## 模型 Top 10
 
-1. **DeepSeek V4 Flash** - 12.1T tokens
-2. **Hy3 preview** - 12.1T tokens
-3. **Claude Opus 4.7** - 7.53T tokens
-4. **Claude Sonnet 4.6** - 7.42T tokens
-5. **Owl Alpha** - 5.57T tokens
-6. **DeepSeek V4 Pro** - 4.98T tokens
-7. **Gemini 3 Flash Preview** - 4.54T tokens
-8. **DeepSeek V3.2** - 4.45T tokens
-9. **MiMo - V2.5** - 3.53T tokens
-10. **Kimi K2.6** - 3.06T tokens
+1. **DeepSeek V4 Flash** - 20.8T tokens
+2. **MiMo-V2.5** - 17.4T tokens
+3. **MiniMax M3** - 17.1T tokens
+4. **Hy3 preview** - 15T tokens
+5. **Claude Opus 4.7** - 10T tokens
+6. **DeepSeek V4 Pro** - 9.68T tokens
+7. **Owl Alpha** - 9.58T tokens
+8. **Claude Opus 4.8** - 7.43T tokens
+9. **Claude Sonnet 4.6** - 7.02T tokens
+10. **GLM 5.2** - 6.51T tokens
 
 
 ## 分析报告
 
-排行榜显示出激烈的竞争，DeepSeek V4 Flash 和 Hy3 preview 并列第一。一个明显的趋势是，较新或近期流行的模型（如 Hy3 preview、Owl Alpha 和 MiMo - V2.5）呈现爆炸性增长，使用量增幅均超过999%。DeepSeek 和 Anthropic 等供应商表现强势，有多个模型进入前十。榜单动态变化，既有成熟的知名模型，也有迅速崛起的新秀，同时一些模型的使用量出现下降，凸显了人工智能模型领域快节奏和竞争激烈的特点。
+OpenRouter 的排行榜显示了一个高度动态和竞争激烈的市场。来自中国开发者的模型，如 DeepSeek、MiMo 和 MiniMax，占据了前三名，展示了它们在受欢迎程度和使用量上的迅速崛起。DeepSeek V4 Flash 在 token 处理量上遥遥领先。一些模型，特别是 MiMo-V2.5 和 MiniMax M3，正经历爆炸性的增长率（超过750%），这表明用户正迅速转向新的、高性能的替代品。Anthropic 的 Claude 系列在前十名中占据三席，保持着强大的影响力，但其增长情况则好坏参半。总体趋势突显了一个快速发展的生态系统，新进入者能够迅速挑战现有模型。
 
 ---
 
@@ -26,6 +26,6 @@
 *数据来源: [OpenRouter Rankings](https://openrouter.ai/rankings?view=month)*
 *分析技术: Google Gemini 2.5 Pro*
 
-生成时间: 2026-06-07 10:28:10
+生成时间: 2026-07-07 11:34:56
 
 **语言**: [English](README.md) | [中文](README_zh.md)

@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2026-07-07T11:34:56.932055+08:00",
+  "models": [
+    {
+      "name": "DeepSeek V4 Flash",
+      "score": "20.8T tokens",
+      "rank": 1,
+      "update_time": "2026-07-07T11:34:56.932055+08:00"
+    },
+    {
+      "name": "MiMo-V2.5",
+      "score": "17.4T tokens",
+      "rank": 2,
+      "update_time": "2026-07-07T11:34:56.932055+08:00"
+    },
+    {
+      "name": "MiniMax M3",
+      "score": "17.1T tokens",
+      "rank": 3,
+      "update_time": "2026-07-07T11:34:56.932055+08:00"
+    },
+    {
+      "name": "Hy3 preview",
+      "score": "15T tokens",
+      "rank": 4,
+      "update_time": "2026-07-07T11:34:56.932056+08:00"
+    },
+    {
+      "name": "Claude Opus 4.7",
+      "score": "10T tokens",
+      "rank": 5,
+      "update_time": "2026-07-07T11:34:56.932056+08:00"
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "score": "9.68T tokens",
+      "rank": 6,
+      "update_time": "2026-07-07T11:34:56.932056+08:00"
+    },
+    {
+      "name": "Owl Alpha",
+      "score": "9.58T tokens",
+      "rank": 7,
+      "update_time": "2026-07-07T11:34:56.932056+08:00"
+    },
+    {
+      "name": "Claude Opus 4.8",
+      "score": "7.43T tokens",
+      "rank": 8,
+      "update_time": "2026-07-07T11:34:56.932056+08:00"
+    },
+    {
+      "name": "Claude Sonnet 4.6",
+      "score": "7.02T tokens",
+      "rank": 9,
+      "update_time": "2026-07-07T11:34:56.932056+08:00"
+    },
+    {
+      "name": "GLM 5.2",
+      "score": "6.51T tokens",
+      "rank": 10,
+      "update_time": "2026-07-07T11:34:56.932056+08:00"
+    }
+  ],
+  "analysis": "The OpenRouter leaderboard indicates a highly dynamic and competitive market. Models from Chinese developers, such as DeepSeek, MiMo, and MiniMax, hold the top three positions, showcasing their rapid rise in popularity and usage. DeepSeek V4 Flash leads significantly in token volume. Several models, notably MiMo-V2.5 and MiniMax M3, are experiencing explosive growth rates (over 750%), suggesting a swift shift in user adoption towards new, high-performing alternatives. Anthropic's Claude series maintains a strong presence with three models in the top 10, though their growth is more mixed. The overall trend highlights a fast-moving ecosystem where new entrants can quickly challenge established models.",
+  "analysis_zh": "OpenRouter 的排行榜显示了一个高度动态和竞争激烈的市场。来自中国开发者的模型，如 DeepSeek、MiMo 和 MiniMax，占据了前三名，展示了它们在受欢迎程度和使用量上的迅速崛起。DeepSeek V4 Flash 在 token 处理量上遥遥领先。一些模型，特别是 MiMo-V2.5 和 MiniMax M3，正经历爆炸性的增长率（超过750%），这表明用户正迅速转向新的、高性能的替代品。Anthropic 的 Claude 系列在前十名中占据三席，保持着强大的影响力，但其增长情况则好坏参半。总体趋势突显了一个快速发展的生态系统，新进入者能够迅速挑战现有模型。"
+}
