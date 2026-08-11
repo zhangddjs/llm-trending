@@ -1,24 +1,24 @@
 # OpenRouter LLM Rankings - Main Leaderboard
 
-Last updated: 2026-07-07 11:34:56
+Last updated: 2026-08-11 10:11:32
 
 ## Top 10 Models
 
-1. **DeepSeek V4 Flash** - 20.8T tokens
-2. **MiMo-V2.5** - 17.4T tokens
-3. **MiniMax M3** - 17.1T tokens
-4. **Hy3 preview** - 15T tokens
-5. **Claude Opus 4.7** - 10T tokens
-6. **DeepSeek V4 Pro** - 9.68T tokens
-7. **Owl Alpha** - 9.58T tokens
-8. **Claude Opus 4.8** - 7.43T tokens
-9. **Claude Sonnet 4.6** - 7.02T tokens
-10. **GLM 5.2** - 6.51T tokens
+1. **MMo-v2.5 by xiaomi** - 33.3T tokens
+2. **DeepSeek V4 Flash 0423 by deepseek** - 26.3T tokens
+3. **Hy3 by tencent** - 18.6T tokens
+4. **Hy3 (free) by tencent** - 14.4T tokens
+5. **GLM-5.2 by z-ai** - 14.2T tokens
+6. **DeepSeek V4 Pro by deepseek** - 12.4T tokens
+7. **DeepSeek V4 Flash 0731 by deepseek** - 11.7T tokens
+8. **Nemotron 3 Ultra (free) by nvidia** - 11.1T tokens
+9. **MinMax-M3 by minimax** - 10.2T tokens
+10. **GPT-5.6 Luna by openai** - 7.81T tokens
 
 
 ## Analysis
 
-The OpenRouter leaderboard indicates a highly dynamic and competitive market. Models from Chinese developers, such as DeepSeek, MiMo, and MiniMax, hold the top three positions, showcasing their rapid rise in popularity and usage. DeepSeek V4 Flash leads significantly in token volume. Several models, notably MiMo-V2.5 and MiniMax M3, are experiencing explosive growth rates (over 750%), suggesting a swift shift in user adoption towards new, high-performing alternatives. Anthropic's Claude series maintains a strong presence with three models in the top 10, though their growth is more mixed. The overall trend highlights a fast-moving ecosystem where new entrants can quickly challenge established models.
+The OpenRouter leaderboard is heavily dominated by models from Chinese technology companies, with Xiaomi's MMo-v2.5 at the top. DeepSeek has a particularly strong presence with three models in the top 10. There is a significant trend in the popularity of free models, such as those from Tencent and Nvidia, indicating a strong user preference for cost-effective solutions. The market is highly dynamic, with many models showing extremely high growth rates, suggesting rapid adoption of new and competitive offerings.
 
 ---
 
@@ -26,6 +26,6 @@ The OpenRouter leaderboard indicates a highly dynamic and competitive market. Mo
 *Data source: [OpenRouter Rankings](https://openrouter.ai/rankings?view=month)*
 *Analysis powered by Google Gemini 2.5 Pro*
 
-Generated on: 2026-07-07 11:34:56
+Generated on: 2026-08-11 10:11:32
 
 **Language**: [English](README.md) | [中文](README_zh.md)

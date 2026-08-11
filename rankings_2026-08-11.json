@@ -1,0 +1,68 @@
+{
+  "category": "General",
+  "date": "2026-08-11T10:11:32.022434+08:00",
+  "models": [
+    {
+      "name": "MMo-v2.5 by xiaomi",
+      "score": "33.3T tokens",
+      "rank": 1,
+      "update_time": "2026-08-11T10:11:32.022435+08:00"
+    },
+    {
+      "name": "DeepSeek V4 Flash 0423 by deepseek",
+      "score": "26.3T tokens",
+      "rank": 2,
+      "update_time": "2026-08-11T10:11:32.022435+08:00"
+    },
+    {
+      "name": "Hy3 by tencent",
+      "score": "18.6T tokens",
+      "rank": 3,
+      "update_time": "2026-08-11T10:11:32.022435+08:00"
+    },
+    {
+      "name": "Hy3 (free) by tencent",
+      "score": "14.4T tokens",
+      "rank": 4,
+      "update_time": "2026-08-11T10:11:32.022436+08:00"
+    },
+    {
+      "name": "GLM-5.2 by z-ai",
+      "score": "14.2T tokens",
+      "rank": 5,
+      "update_time": "2026-08-11T10:11:32.022436+08:00"
+    },
+    {
+      "name": "DeepSeek V4 Pro by deepseek",
+      "score": "12.4T tokens",
+      "rank": 6,
+      "update_time": "2026-08-11T10:11:32.022437+08:00"
+    },
+    {
+      "name": "DeepSeek V4 Flash 0731 by deepseek",
+      "score": "11.7T tokens",
+      "rank": 7,
+      "update_time": "2026-08-11T10:11:32.022437+08:00"
+    },
+    {
+      "name": "Nemotron 3 Ultra (free) by nvidia",
+      "score": "11.1T tokens",
+      "rank": 8,
+      "update_time": "2026-08-11T10:11:32.022437+08:00"
+    },
+    {
+      "name": "MinMax-M3 by minimax",
+      "score": "10.2T tokens",
+      "rank": 9,
+      "update_time": "2026-08-11T10:11:32.022437+08:00"
+    },
+    {
+      "name": "GPT-5.6 Luna by openai",
+      "score": "7.81T tokens",
+      "rank": 10,
+      "update_time": "2026-08-11T10:11:32.022439+08:00"
+    }
+  ],
+  "analysis": "The OpenRouter leaderboard is heavily dominated by models from Chinese technology companies, with Xiaomi's MMo-v2.5 at the top. DeepSeek has a particularly strong presence with three models in the top 10. There is a significant trend in the popularity of free models, such as those from Tencent and Nvidia, indicating a strong user preference for cost-effective solutions. The market is highly dynamic, with many models showing extremely high growth rates, suggesting rapid adoption of new and competitive offerings.",
+  "analysis_zh": "OpenRouter 的排行榜目前主要由中国科技公司的模型主导，小米的 MMo-v2.5 位居榜首。DeepSeek 的表现尤为强劲，在前十名中占据了三个席位。免费模型的受欢迎程度是一个显著趋势，例如腾讯和英伟达的模型，这表明用户对高性价比解决方案有强烈的偏好。市场表现出高度的动态性，许多模型的增长率极高，这表明新的、有竞争力的产品正在被迅速采用。"
+}
